@@ -1,0 +1,99 @@
+<main id="main-content" class="nodex-main">
+<article class="nodex-content nodex-guide" lang="en"><nav class="nodex-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="nodex-breadcrumbs-sep" aria-hidden="true">/</span><a href="/guides/">Guides</a><span class="nodex-breadcrumbs-sep" aria-hidden="true">/</span><span aria-current="page">Vast.ai Hosting Guide</span></nav>
+<header class="nodex-hero">
+<p class="nodex-eyebrow">GPU RENTAL GUIDE · UPDATED 10 NOVEMBER 2026</p>
+<h1>Vast.ai hosting: how to rent out GPU servers</h1>
+<p>Vast.ai is a marketplace where owners of GPU servers rent out computing power to AI developers, researchers and companies. This guide explains how hosting works, what hardware and infrastructure you need, how pricing and verification work and what to budget for. It is based on Vast.ai&#8217;s host documentation and our experience building GPU servers for rental deployments.</p>
+<div class="nodex-actions"><a class="nodex-button" href="/gpu-rental-business/">See our turnkey service</a><a href="#costs">Plan the costs</a></div>
+</header><nav class="nodex-toc" aria-label="On this page"><p class="nodex-toc-title">On this page</p><ol><li><a href="#how-it-works">How Vast.ai hosting works</a></li><li><a href="#responsibilities">What the host is responsible for</a></li><li><a href="#verification">Verification and reliability</a></li><li><a href="#hardware">Hardware that rents well</a></li><li><a href="#costs">Plan the economics before you buy</a></li><li><a href="#nodex">Hosting on Vast.ai with NodeX</a></li><li><a href="#faq">Frequently asked questions</a></li><li><a href="#sources">Sources</a></li></ol></nav>
+<section id="how-it-works">
+<h2>How Vast.ai hosting works</h2>
+<p>As a host, you install Vast.ai&#8217;s hosting software on your own machines and list them on the marketplace. Clients rent GPUs by the hour and run their workloads in containers or virtual machines on your hardware. You set the prices; Vast.ai provides the marketplace, billing and client base, and charges a platform fee under its hosting agreement.</p>
+<ul>
+<li><strong>On-demand rentals</strong> pay your hourly GPU price and have the highest priority.</li>
+<li><strong>Interruptible rentals</strong> are bids at or above a minimum price you can set. The highest bid runs; the others pause, and on-demand rentals take precedence.</li>
+<li><strong>Reserved rentals</strong> give clients a discount for committing to longer rentals, up to a maximum discount you choose.</li>
+<li><strong>Minimum GPU count</strong> sets the smallest share of a multi-GPU machine a client can rent, for example 2, 4 or 8 GPUs of an 8-GPU server.</li>
+</ul>
+<p>Each rental locks in the price, your offer&#8217;s end date and the machine&#8217;s specifications. Changing your price later affects only new rentals, and the machine must stay online until the latest rental end date.</p>
+</section>
+<section id="responsibilities">
+<h2>What the host is responsible for</h2>
+<p>Clients expect cloud-level reliability, and Vast.ai&#8217;s documentation makes the host responsible for:</p>
+<ul>
+<li>installing Ubuntu, partitioning disks, installing the NVIDIA drivers and the Vast.ai hosting software;</li>
+<li>opening the network ports that clients need to connect directly;</li>
+<li>fixing driver conflicts, failed GPUs and network problems — Vast.ai does not offer support for getting a machine working;</li>
+<li>planning maintenance around active rentals and announcing unplanned maintenance windows;</li>
+<li>keeping the machine online for the whole rental period, with adequate power, cooling and internet.</li>
+</ul>
+<p>On AMD EPYC systems the IOMMU settings need attention, and automatic updates should be disabled so that a driver update does not interrupt a client&#8217;s job. Hosting also requires a separate Vast.ai account from the one you use as a client.</p>
+</section>
+<section id="verification">
+<h2>Verification and reliability</h2>
+<p>Verification makes a machine more attractive to clients. It is fully automated and considers reliability, infrastructure configuration, the DLPerf performance score and current supply and demand. Vast.ai notes that sustained uptime of 99.99% or more is typically favoured.</p>
+<p>Reliability falls when a machine goes offline, loses its connection or fails to start a client&#8217;s instance. Restarting during a rental also costs reliability, and reducing the hardware after listing — for example removing GPUs or RAM — removes verification.</p>
+<p>Operators of larger installations can apply for <strong>datacenter status</strong>. The requirements include a facility with active third-party certification such as ISO/IEC 27001 and at least five GPU servers. Datacenter partners generally rank higher in search results on the marketplace.</p>
+</section>
+<section id="hardware">
+<h2>Hardware that rents well</h2>
+<p>Vast.ai does not publish a fixed hardware list, but its verification guidance favours:</p>
+<ul>
+<li><strong>newer data centre and workstation GPUs</strong>, and several GPUs of the same model in one machine;</li>
+<li><strong>server-grade processors</strong> with measured performance to match, and RAM balanced with the GPU tier;</li>
+<li><strong>fast NVMe storage</strong> with capacity for client datasets and container images;</li>
+<li><strong>full PCIe bandwidth</strong> for every GPU, without throttled slots;</li>
+<li><strong>fast, symmetric and stable internet</strong> with the required ports reachable and, ideally, a static IP address;</li>
+<li><strong>virtual machine support</strong>, which significantly improves the likelihood of verification.</li>
+</ul>
+<p>In practice this points to multi-GPU servers on AMD EPYC platforms with ECC server memory and NVMe storage, rather than converted desktop PCs. Our <a href="/our-products/">4U GPU servers</a> take up to 8 or 12 GPUs depending on the platform and cards. For the GPU choice itself, see <a href="/rtx-pro-6000-vs-h200/">RTX PRO 6000 vs H200 NVL</a> and <a href="/rtx-4090-48gb/">RTX 4090 48GB</a>.</p>
+</section>
+<section id="costs">
+<h2>Plan the economics before you buy</h2>
+<p>Rental income depends on demand, competition, your prices and the share of time your GPUs are rented. None of these is fixed, and NodeX does not guarantee income, occupancy or a payback period. A simple monthly model helps you test your assumptions:</p>
+<ol>
+<li>
+<h3>Expected revenue</h3>
+<p>Number of GPUs × hourly price × hours in the month × expected utilisation, minus the platform fee.</p>
+</li>
+<li>
+<h3>Running costs</h3>
+<p>Electricity for the whole server — a multi-GPU server can draw several kilowatts under load — plus cooling or colocation, internet and repairs.</p>
+</li>
+<li>
+<h3>Operation</h3>
+<p>Monitoring, troubleshooting and maintenance, done by you or under an agreed managed service.</p>
+</li>
+<li>
+<h3>Depreciation</h3>
+<p>Rental prices for a GPU model tend to fall as newer models arrive. Plan for a realistic useful life and resale value.</p>
+</li>
+</ol>
+<p>Test the model with cautious utilisation and price assumptions, and check current marketplace prices for the GPU model you are considering before you order.</p>
+</section>
+<section id="nodex">
+<h2>Hosting on Vast.ai with NodeX</h2><figure class="nodex-guide-photo"><a href="/product/nx-g8-dual-sp3/"><img src="/wp-content/plugins/ai-server-quote-system/assets/nodex-nx-g8-dual-sp3-800.webp" width="800" height="295" alt="NodeX NX-G8 Dual SP3 8-GPU server for Vast.ai hosting" loading="lazy" decoding="async"></a><figcaption><a href="/product/nx-g8-dual-sp3/">NX-G8 Dual SP3: up to 8 GPUs with dual AMD EPYC SP3 processors and DDR4 ECC memory.</a></figcaption></figure>
+<p>NodeX builds and tests the servers, can arrange colocation in Bulgaria or installation at your premises, sets up the operating system, drivers and Vast.ai software, and can monitor and maintain the machines under an agreed service. You own the hardware and make the business decisions. NodeX is an independent hardware and services supplier and is not affiliated with Vast.ai.</p>
+<div class="nodex-actions"><a class="nodex-button" href="/request-a-quote/?service=gpu-rental-business">Discuss a rental deployment</a><a href="/gpu-rental-business/">How our turnkey service works</a></div>
+</section>
+<section id="faq">
+<h2>Frequently asked questions</h2>
+<details>
+<summary>Can I host on Vast.ai with a home internet connection?</summary>
+<p>Clients need to reach your machine through open ports, and verification favours fast, symmetric and stable connections with a static IP address. Many residential connections do not meet these needs. Check the requirements in Vast.ai&#8217;s host setup guide before you buy hardware.</p>
+</details>
+<details>
+<summary>Can I use one Vast.ai account for renting and hosting?</summary>
+<p>No. Vast.ai requires a separate account for hosting.</p>
+</details>
+<details>
+<summary>How soon can a new machine start earning?</summary>
+<p>That depends on setup, verification and demand for your GPU model. Verification is automated and not immediate, and a newly listed machine has no rental history yet.</p>
+</details>
+<details>
+<summary>Is Vast.ai the only option?</summary>
+<p>No. Other GPU rental platforms exist, each with its own requirements, fees and demand. We can discuss alternatives as part of your project.</p>
+</details>
+</section>
+<section id="sources" class="nodex-sources"><h2>Sources</h2><p>Specifications and platform details on this page come from the published sources below. Prices come from our configurator on the date shown at the top of the page.</p><ul><li><a href="https://docs.vast.ai/host/hosting-overview">Vast.ai: Hosting overview</a></li><li><a href="https://docs.vast.ai/host/understanding-verification">Vast.ai: Understanding verification</a></li></ul></section></article>
+<section class="nodex-content nodex-related-guides" aria-label="Guides"><h2>Guides</h2><div class="nodex-grid"><div class="nodex-card"><h3><a href="/buy-or-rent-gpu-server/">Buy or rent a GPU server? Where the break-even point is</a></h3><p>Break-even hours for the RTX PRO 6000, H200 NVL and RTX 5090 against Vast.ai rental prices, a complete 8-GPU server and what the numbers leave out.</p></div><div class="nodex-card"><h3><a href="/8x-rtx-pro-6000-server/">8× RTX PRO 6000 server: reference configuration and price</a></h3><p>Two complete builds with eight RTX PRO 6000 GPUs and 768GB of GPU memory, every component priced, plus power and cooling.</p></div><div class="nodex-card"><h3><a href="/rtx-pro-6000/">RTX PRO 6000 Blackwell: price, editions and specifications</a></h3><p>Server, Workstation and Max-Q editions compared, full specifications, EU prices from $11,900 and how it compares with the RTX 5090.</p></div><div class="nodex-card"><h3><a href="/rtx-4090-48gb/">RTX 4090 48GB for AI: specifications, price and buying in the EU</a></h3><p>Specifications, what fits in 48GB of VRAM, prices compared with the RTX 3090 48GB, RTX 5090 and RTX PRO 6000, and what to check before buying.</p></div></div></section></main>

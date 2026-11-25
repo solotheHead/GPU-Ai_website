@@ -1,0 +1,292 @@
+<main id="main-content" class="nodex-main">
+<article class="nodex-content nodex-guide" lang="en"><nav class="nodex-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="nodex-breadcrumbs-sep" aria-hidden="true">/</span><a href="/guides/">Guides</a><span class="nodex-breadcrumbs-sep" aria-hidden="true">/</span><span aria-current="page">RTX PRO 6000 Blackwell</span></nav>
+<header class="nodex-hero">
+<p class="nodex-eyebrow">GPU GUIDE · UPDATED 11 NOVEMBER 2026</p>
+<h1>RTX PRO 6000 Blackwell: price, editions and specifications</h1>
+<p>The NVIDIA RTX PRO 6000 Blackwell is a professional GPU with 96GB of GDDR7 memory and fifth-generation Tensor Cores with FP4 support. It comes in three editions — Server, Workstation and Max-Q — that share the same memory but differ in cooling, power and where they belong. This page compares the editions, lists the specifications, shows our indicative EU prices and explains when an RTX 5090 or an H200 NVL is the better choice.</p>
+<div class="nodex-actions"><a class="nodex-button" href="/our-products/">Configure a server with RTX PRO 6000</a><a href="#editions">Compare the editions</a></div>
+</header><nav class="nodex-toc" aria-label="On this page"><p class="nodex-toc-title">On this page</p><ol><li><a href="#glance">At a glance</a></li><li><a href="#editions">The three editions compared</a></li><li><a href="#which-edition">Which edition do you need?</a></li><li><a href="#specifications">RTX PRO 6000 Server Edition specs</a></li><li><a href="#price">RTX PRO 6000 price in the EU</a></li><li><a href="#vs-rtx-5090">RTX PRO 6000 vs RTX 5090</a></li><li><a href="#workloads">What 96GB of GPU memory is good for</a></li><li><a href="#nodex">RTX PRO 6000 servers from NodeX</a></li><li><a href="#faq">Frequently asked questions</a></li><li><a href="#sources">Sources</a></li></ol></nav>
+<section id="glance">
+<h2>At a glance</h2>
+<div class="nodex-grid">
+<div class="nodex-card">
+<h3>96GB GDDR7 with ECC</h3>
+<p>Enough for a 70B-parameter model in 8-bit on a single GPU, with room left for context.</p>
+</div>
+<div class="nodex-card">
+<h3>Blackwell with FP4</h3>
+<p>Fifth-generation Tensor Cores add hardware FP4, which halves the memory per parameter compared with FP8.</p>
+</div>
+<div class="nodex-card">
+<h3>Three editions</h3>
+<p>Server Edition for rack servers, Workstation Edition for desktops, Max-Q for multi-GPU workstations at 300W.</p>
+</div>
+<div class="nodex-card">
+<h3>From $11,900 at NodeX</h3>
+<p>Indicative price of the Server Edition in our configurator on 11 November 2026, confirmed in your written quote.</p>
+</div>
+</div>
+</section>
+<section id="editions">
+<h2>The three editions compared</h2>
+<p>Figures from NVIDIA&#8217;s published specifications for each edition. NVIDIA states that the Workstation and Max-Q AI TOPS figures are theoretical FP4 with sparsity; it does not say whether the Server Edition&#8217;s 4 PFLOPS FP4 figure assumes sparsity, so treat the FP4 row as approximate.</p>
+<div class="nodex-table-scroll">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Server Edition</th>
+<th>Workstation Edition</th>
+<th>Max-Q Workstation Edition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPU memory</td>
+<td>96GB GDDR7 with ECC</td>
+<td>96GB GDDR7 with ECC</td>
+<td>96GB GDDR7 with ECC</td>
+</tr>
+<tr>
+<td>Memory bandwidth</td>
+<td>1,597 GB/s</td>
+<td>1,792 GB/s</td>
+<td>1,792 GB/s</td>
+</tr>
+<tr>
+<td>FP4 AI performance</td>
+<td>4 PFLOPS</td>
+<td>4,000 AI TOPS (with sparsity)</td>
+<td>3,511 AI TOPS (with sparsity)</td>
+</tr>
+<tr>
+<td>FP32</td>
+<td>120 TFLOPS</td>
+<td>125 TFLOPS</td>
+<td>110 TFLOPS</td>
+</tr>
+<tr>
+<td>RT Core performance</td>
+<td>355 TFLOPS</td>
+<td>380 TFLOPS</td>
+<td>333 TFLOPS</td>
+</tr>
+<tr>
+<td>Maximum power</td>
+<td>Up to 600W, configurable</td>
+<td>600W</td>
+<td>300W</td>
+</tr>
+<tr>
+<td>Cooling</td>
+<td>Passive (air) or liquid-cooled version</td>
+<td>Double flow-through fans</td>
+<td>Active (fan)</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>Dual-slot, full height, full length (air)</td>
+<td>Dual-slot, 5.4&#8243; × 12.0&#8243;</td>
+<td>Dual-slot, 4.4&#8243; × 10.5&#8243;</td>
+</tr>
+<tr>
+<td>Built for</td>
+<td>Rack servers with front-to-back airflow</td>
+<td>Desktop workstations</td>
+<td>Workstations with several GPUs and limited power</td>
+</tr>
+<tr>
+<td>Indicative NodeX price</td>
+<td>$11,900</td>
+<td>$12,400</td>
+<td>On request</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Prices are NodeX indicative prices in US dollars as shown in our configurator on 11 November 2026. VAT, delivery and availability are confirmed in your written quotation.</p>
+</section>
+<section id="which-edition">
+<h2>Which edition do you need?</h2>
+<ul>
+<li><strong>Server Edition</strong> — for rack servers. It has no fans of its own and relies on the server&#8217;s front-to-back airflow, which is how our 4U GPU servers are built. Choose it for 2 to 8 GPUs in one chassis.</li>
+<li><strong>Workstation Edition</strong> — for a desktop workstation with one or two GPUs. Its fans push air through the card, which suits an open workstation case rather than a dense server.</li>
+<li><strong>Max-Q Workstation Edition</strong> — for workstations that need several GPUs on a limited power budget. At 300W it gives up some performance for half the power.</li>
+</ul>
+<p>Whichever edition you choose, we confirm compatibility with the chassis, power supplies and cooling in your quotation.</p>
+</section>
+<section id="specifications">
+<h2>RTX PRO 6000 Server Edition specs</h2>
+<div class="nodex-table-scroll">
+<table>
+<thead>
+<tr>
+<th>Specification</th>
+<th>RTX PRO 6000 Blackwell Server Edition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Architecture</td>
+<td>NVIDIA Blackwell</td>
+</tr>
+<tr>
+<td>CUDA cores</td>
+<td>24,064</td>
+</tr>
+<tr>
+<td>Tensor Cores</td>
+<td>5th generation</td>
+</tr>
+<tr>
+<td>RT Cores</td>
+<td>188 (4th generation)</td>
+</tr>
+<tr>
+<td>GPU memory</td>
+<td>96GB GDDR7 with ECC, 512-bit</td>
+</tr>
+<tr>
+<td>Memory bandwidth</td>
+<td>1,597 GB/s</td>
+</tr>
+<tr>
+<td>FP4 Tensor Core</td>
+<td>4 PFLOPS</td>
+</tr>
+<tr>
+<td>FP8 Tensor Core</td>
+<td>2 PFLOPS</td>
+</tr>
+<tr>
+<td>FP16 / BF16 Tensor Core</td>
+<td>1 PFLOPS</td>
+</tr>
+<tr>
+<td>TF32 Tensor Core</td>
+<td>234 TFLOPS</td>
+</tr>
+<tr>
+<td>FP32</td>
+<td>120 TFLOPS</td>
+</tr>
+<tr>
+<td>Multi-Instance GPU</td>
+<td>Up to 4 isolated instances</td>
+</tr>
+<tr>
+<td>Video engines</td>
+<td>4 encoders (9th gen NVENC), 4 decoders (6th gen NVDEC)</td>
+</tr>
+<tr>
+<td>Interface</td>
+<td>PCI Express Gen 5</td>
+</tr>
+<tr>
+<td>Maximum power</td>
+<td>Up to 600W, configurable</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The RTX PRO 6000 has no NVLink: several cards in one server communicate over PCIe. This works well for inference and for running several models side by side; models split across many GPUs gain more from NVLink, which the <a href="/rtx-pro-6000-vs-h200/">H200 NVL</a> offers.</p>
+</section>
+<section id="price">
+<h2>RTX PRO 6000 price in the EU</h2>
+<p>NodeX sells the RTX PRO 6000 as part of a complete GPU server, built and tested in Bulgaria. Indicative GPU prices at NodeX on 11 November 2026:</p>
+<div class="nodex-table-scroll">
+<table>
+<thead>
+<tr>
+<th>Configuration</th>
+<th>Total GPU memory</th>
+<th>GPUs at indicative prices</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1× RTX PRO 6000 Server Edition</td>
+<td>96GB</td>
+<td>$11,900 (about $124 per GB)</td>
+</tr>
+<tr>
+<td>1× RTX PRO 6000 Workstation Edition</td>
+<td>96GB</td>
+<td>$12,400 (about $129 per GB)</td>
+</tr>
+<tr>
+<td>2× Server Edition</td>
+<td>192GB</td>
+<td>$23,800</td>
+</tr>
+<tr>
+<td>4× Server Edition</td>
+<td>384GB</td>
+<td>$47,600</td>
+</tr>
+<tr>
+<td>8× Server Edition</td>
+<td>768GB</td>
+<td>$95,200</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>These totals cover the GPUs only. The platform, processors, memory, storage, networking, assembly and warranty are added in your quote. For a complete, priced eight-GPU build, see our <a href="/8x-rtx-pro-6000-server/">8× RTX PRO 6000 reference configuration</a>.</p>
+</section>
+<section id="vs-rtx-5090">
+<h2>RTX PRO 6000 vs RTX 5090</h2>
+<p>Both are Blackwell GPUs with GDDR7 on a 512-bit interface. The difference that matters most for AI is memory: 96GB against 32GB. At our indicative prices the RTX 5090 server version costs $4,690 and the RTX PRO 6000 Server Edition $11,900 — about $147 against $124 per GB of GPU memory.</p>
+<ul>
+<li><strong>Choose the RTX 5090</strong> when your models fit comfortably in 32GB per GPU — for example 8B to 14B models, or image generation — and the budget per GPU matters most.</li>
+<li><strong>Choose the RTX PRO 6000</strong> when you need memory. One card holds what would otherwise be split across three RTX 5090s.</li>
+</ul>
+<p>Specifications, cost at equal memory, power and use cases are in our full <a href="/rtx-pro-6000-vs-rtx-5090/">RTX PRO 6000 vs RTX 5090 comparison</a>.</p>
+</section>
+<section id="workloads">
+<h2>What 96GB of GPU memory is good for</h2>
+<div class="nodex-grid">
+<div class="nodex-card">
+<h3>LLM inference</h3>
+<p>A 70B model in 8-bit needs about 70GB for the weights, so it fits on one card with room for context. A 32B model fits even in 16-bit.</p>
+</div>
+<div class="nodex-card">
+<h3>Larger models across GPUs</h3>
+<p>Two to four cards give 192–384GB for 70B models in 16-bit or 120B-class models in 8-bit; eight cards give 768GB.</p>
+</div>
+<div class="nodex-card">
+<h3>Fine-tuning</h3>
+<p>LoRA and medium-scale fine-tuning benefit from 96GB per GPU, which reduces the need to split work across cards.</p>
+</div>
+<div class="nodex-card">
+<h3>Rendering and video</h3>
+<p>RT Cores and four encoders and decoders per card suit rendering, simulation and video pipelines.</p>
+</div>
+</div>
+</section>
+<section id="nodex">
+<h2>RTX PRO 6000 servers from NodeX</h2><figure class="nodex-guide-photo"><a href="/product/nx-g8-dual-sp5/"><img src="/wp-content/plugins/ai-server-quote-system/assets/nodex-nx-g8-dual-sp5-800.webp" width="800" height="333" alt="NodeX NX-G8 Dual SP5 GPU server for up to eight RTX PRO 6000 Server Edition GPUs" loading="lazy" decoding="async"></a><figcaption><a href="/product/nx-g8-dual-sp5/">NX-G8 Dual SP5: up to 8 GPUs with dual AMD EPYC SP5 processors and DDR5 ECC memory.</a></figcaption></figure>
+<p>We build 4U GPU servers in Bulgaria with one to eight RTX PRO 6000 Server Edition GPUs — for example on our <a href="/product/nx-g8-dual-sp5/">NX-G8 Dual SP5</a> platform with AMD EPYC 9004-series processors, DDR5 and PCIe 5.0. Your written quotation confirms compatibility, power and cooling, delivery and warranty. We can also arrange colocation in Bulgaria and operating system installation.</p>
+<div class="nodex-actions"><a class="nodex-button" href="/our-products/">Configure a GPU server</a><a href="/request-a-quote/">Request a quote</a></div>
+</section>
+<section id="faq">
+<h2>Frequently asked questions</h2>
+<details>
+<summary>Is the RTX PRO 6000 the same as the RTX 6000 Ada?</summary>
+<p>No. The RTX 6000 Ada is the previous generation, with 48GB of GDDR6 and no FP4 support. The RTX PRO 6000 Blackwell has 96GB of GDDR7. Both are in our configurator: the RTX 6000 Ada at $6,726 and the RTX PRO 6000 Server Edition at $11,900 (indicative).</p>
+</details>
+<details>
+<summary>Can I put the Workstation Edition in a rack server?</summary>
+<p>The Workstation Edition is designed for the airflow of a desktop workstation, while the Server Edition is designed to be cooled by a server&#8217;s fans. For multi-GPU rack servers we recommend the Server Edition and confirm the final choice in your quotation.</p>
+</details>
+<details>
+<summary>Does the RTX PRO 6000 support NVLink?</summary>
+<p>No. Cards communicate over PCI Express Gen 5. If you need NVLink between GPUs, compare it with the <a href="/rtx-pro-6000-vs-h200/">H200 NVL</a>.</p>
+</details>
+<details>
+<summary>Do you sell the Max-Q edition?</summary>
+<p>It is not in our configurator at the moment. Ask us in your request and we will check availability and price.</p>
+</details>
+</section>
+<section id="sources" class="nodex-sources"><h2>Sources</h2><p>Specifications and platform details on this page come from the published sources below. Prices come from our configurator on the date shown at the top of the page.</p><ul><li><a href="https://www.nvidia.com/en-us/data-center/rtx-pro-6000-blackwell-server-edition/">NVIDIA: RTX PRO 6000 Blackwell Server Edition</a></li><li><a href="https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-6000/">NVIDIA: RTX PRO 6000 Blackwell Workstation Edition</a></li><li><a href="https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-6000-max-q/">NVIDIA: RTX PRO 6000 Blackwell Max-Q Workstation Edition</a></li><li><a href="https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/">NVIDIA: GeForce RTX 5090</a></li></ul></section></article>
+<section class="nodex-content nodex-related-guides" aria-label="Guides"><h2>Guides</h2><div class="nodex-grid"><div class="nodex-card"><h3><a href="/rtx-pro-6000-vs-rtx-5090/">RTX PRO 6000 vs RTX 5090: which GPU for AI work?</a></h3><p>Specifications, price per GB, cost at equal memory, power and which models each GPU runs, with indicative EU prices.</p></div><div class="nodex-card"><h3><a href="/rtx-pro-6000-vs-h200/">RTX PRO 6000 vs H200 NVL: which GPU for your AI server?</a></h3><p>Memory, bandwidth, FP4 and FP8, power, NVLink and 8-GPU costs compared, with recommendations by workload.</p></div><div class="nodex-card"><h3><a href="/buy-or-rent-gpu-server/">Buy or rent a GPU server? Where the break-even point is</a></h3><p>Break-even hours for the RTX PRO 6000, H200 NVL and RTX 5090 against Vast.ai rental prices, a complete 8-GPU server and what the numbers leave out.</p></div><div class="nodex-card"><h3><a href="/8x-rtx-pro-6000-server/">8× RTX PRO 6000 server: reference configuration and price</a></h3><p>Two complete builds with eight RTX PRO 6000 GPUs and 768GB of GPU memory, every component priced, plus power and cooling.</p></div><div class="nodex-card"><h3><a href="/local-llm-server/">Local LLM server: how much GPU memory do you need?</a></h3><p>The arithmetic for model weights and context, a sizing table from 8B to 670B parameters and the hardware for each tier.</p></div></div></section></main>

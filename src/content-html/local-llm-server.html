@@ -1,0 +1,176 @@
+<main id="main-content" class="nodex-main">
+<article class="nodex-content nodex-guide" lang="en"><nav class="nodex-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="nodex-breadcrumbs-sep" aria-hidden="true">/</span><a href="/guides/">Guides</a><span class="nodex-breadcrumbs-sep" aria-hidden="true">/</span><span aria-current="page">Local LLM Server Guide</span></nav>
+<header class="nodex-hero">
+<p class="nodex-eyebrow">GPU GUIDE · UPDATED 10 NOVEMBER 2026</p>
+<h1>Local LLM server: how much GPU memory do you need?</h1>
+<p>Running large language models on your own hardware keeps data in-house and makes costs predictable. The first question is always the same: how much GPU memory does the model need? This guide gives you the arithmetic, a sizing table and the hardware that matches each tier — from a single 32GB card to an eight-GPU server.</p>
+<div class="nodex-actions"><a class="nodex-button" href="#sizing">See the sizing table</a><a href="/request-a-quote/">Discuss your workload</a></div>
+</header><nav class="nodex-toc" aria-label="On this page"><p class="nodex-toc-title">On this page</p><ol><li><a href="#formula">The two numbers that decide GPU memory</a></li><li><a href="#sizing">Sizing table</a></li><li><a href="#tiers">Which hardware fits which models</a></li><li><a href="#speed">Memory decides what fits; bandwidth decides how fast</a></li><li><a href="#checklist">Planning checklist</a></li><li><a href="#nodex">Local LLM servers from NodeX</a></li><li><a href="#faq">Frequently asked questions</a></li><li><a href="#sources">Sources</a></li></ol></nav>
+<section id="formula">
+<h2>The two numbers that decide GPU memory</h2>
+<p><strong>1. Model weights.</strong> Multiply the number of parameters by the bytes per parameter of the precision you run:</p>
+<ul>
+<li>16-bit (FP16/BF16): about 2 bytes per parameter;</li>
+<li>8-bit (FP8/INT8): about 1 byte per parameter;</li>
+<li>4-bit (for example GPTQ, AWQ or GGUF Q4 formats): about 0.5–0.6 bytes per parameter.</li>
+</ul>
+<p>A 70-billion-parameter model therefore needs about 140GB at 16-bit, 70GB at 8-bit and 35–42GB at 4-bit, before anything else is loaded.</p>
+<p><strong>2. Context (the KV cache).</strong> Every token in the context window keeps keys and values in GPU memory, for every user served at the same time. For a 70B model of the Llama 3 type with grouped-query attention, this is roughly 0.3MB per token at 16-bit — about 10GB for one 32,000-token conversation. Ten users with long contexts can need more memory for the KV cache than for the model itself.</p>
+<p>Add a margin of 10–20% for the runtime, activations and memory fragmentation.</p>
+</section>
+<section id="sizing">
+<h2>Sizing table</h2>
+<p>Approximate memory for the model weights alone. Leave room for the KV cache and runtime on top.</p>
+<div class="nodex-table-scroll">
+<table>
+<thead>
+<tr>
+<th>Model size</th>
+<th>16-bit</th>
+<th>8-bit</th>
+<th>4-bit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8B</td>
+<td>~16GB</td>
+<td>~8GB</td>
+<td>~5GB</td>
+</tr>
+<tr>
+<td>14B</td>
+<td>~28GB</td>
+<td>~14GB</td>
+<td>~8GB</td>
+</tr>
+<tr>
+<td>32B</td>
+<td>~64GB</td>
+<td>~32GB</td>
+<td>~18GB</td>
+</tr>
+<tr>
+<td>70B</td>
+<td>~140GB</td>
+<td>~70GB</td>
+<td>~40GB</td>
+</tr>
+<tr>
+<td>120B</td>
+<td>~240GB</td>
+<td>~120GB</td>
+<td>~65GB</td>
+</tr>
+<tr>
+<td>400B</td>
+<td>~800GB</td>
+<td>~400GB</td>
+<td>~220GB</td>
+</tr>
+<tr>
+<td>670B</td>
+<td>~1,340GB</td>
+<td>~670GB</td>
+<td>~370GB</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Mixture-of-experts (MoE) models activate only part of their parameters per token, which makes them faster, but all experts must still be held in memory. Size them by their total parameter count.</p>
+</section>
+<section id="tiers">
+<h2>Which hardware fits which models</h2>
+<p>Indicative NodeX prices in US dollars as shown on our website on 10 November 2026; VAT, delivery and availability are confirmed in your written quote.</p>
+<div class="nodex-table-scroll">
+<table>
+<thead>
+<tr>
+<th>GPU memory</th>
+<th>Example hardware</th>
+<th>Comfortable fit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>32GB</td>
+<td>RTX 5090 32GB ($4,690 per card)</td>
+<td>8B–14B at 8- or 16-bit; 32B-class at 4-bit with a short context</td>
+</tr>
+<tr>
+<td>48GB</td>
+<td><a href="/rtx-4090-48gb/">RTX 4090 48GB</a> ($4,000) or RTX 3090 48GB ($2,000)</td>
+<td>32B-class at 8-bit; 70B at 4-bit with a moderate context</td>
+</tr>
+<tr>
+<td>96GB</td>
+<td>RTX PRO 6000 Blackwell ($11,900) or 2× 48GB cards</td>
+<td>70B at 8-bit; ~120B MoE at 4-bit</td>
+</tr>
+<tr>
+<td>141GB</td>
+<td>H200 NVL ($29,490)</td>
+<td>70B at 8-bit with long contexts and many users</td>
+</tr>
+<tr>
+<td>192–384GB</td>
+<td>2–4× RTX PRO 6000 in one server</td>
+<td>70B at 16-bit; 120B-class at 8-bit; several models at once</td>
+</tr>
+<tr>
+<td>768GB</td>
+<td><a href="/8x-rtx-pro-6000-server/">8× RTX PRO 6000 server</a> (from $121,384)</td>
+<td>400B-class at 8-bit; 670B-class at 4-bit</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>When a model is split across several GPUs (tensor or pipeline parallelism), the GPUs exchange data constantly. Cards without NVLink communicate over PCIe, which works well for inference but adds overhead; see <a href="/rtx-pro-6000-vs-h200/">RTX PRO 6000 vs H200 NVL</a> for the trade-offs.</p>
+</section>
+<section id="speed">
+<h2>Memory decides what fits; bandwidth decides how fast</h2>
+<p>For a single user, the speed of text generation is limited mainly by memory bandwidth, because the weights are read for every token. That is why an H200 NVL (4.8 TB/s) generates faster than an RTX PRO 6000 (1.6 TB/s), and why lower precision is also faster: a 4-bit model has a quarter of the bytes to read of a 16-bit one. For many users at once, batching makes compute and the KV cache the limits, and serving software such as vLLM or SGLang uses the GPU far more efficiently than single-user tools.</p>
+</section>
+<section id="checklist">
+<h2>Planning checklist</h2>
+<ol>
+<li>
+<h3>Pick the models</h3>
+<p>List the models you will run now and in the next year, at the precision you accept for quality.</p>
+</li>
+<li>
+<h3>Estimate the users and context</h3>
+<p>Concurrent users and context length set the KV cache. Long documents and agents need much more than chat.</p>
+</li>
+<li>
+<h3>Add headroom</h3>
+<p>New models tend to be larger. A server with free slots lets you add GPUs later in the same platform.</p>
+</li>
+<li>
+<h3>Plan the room</h3>
+<p>GPU servers draw kilowatts and are loud. Decide between your premises and colocation early.</p>
+</li>
+</ol>
+</section>
+<section id="nodex">
+<h2>Local LLM servers from NodeX</h2><figure class="nodex-guide-photo"><a href="/product/nx-g8-dual-sp3/"><img src="/wp-content/plugins/ai-server-quote-system/assets/nodex-nx-g8-dual-sp3-800.webp" width="800" height="295" alt="NodeX NX-G8 Dual SP3 GPU server for local LLM inference" loading="lazy" decoding="async"></a><figcaption><a href="/product/nx-g8-dual-sp3/">NX-G8 Dual SP3: up to 8 GPUs with dual AMD EPYC SP3 processors and DDR4 ECC memory.</a></figcaption></figure>
+<p>We build GPU servers in Bulgaria for private AI inference, from single 48GB cards to eight-GPU systems, and can arrange colocation and the operating system setup. Tell us the models, users and context lengths you plan for, and we will propose a configuration with a written quotation.</p>
+<div class="nodex-actions"><a class="nodex-button" href="/request-a-quote/">Request a configuration</a><a href="/our-products/">See GPU servers</a></div>
+</section>
+<section id="faq">
+<h2>Frequently asked questions</h2>
+<details>
+<summary>Is 4-bit quantisation good enough?</summary>
+<p>For many chat and assistant tasks, well-made 4-bit versions of large models perform close to the original, and a larger model at 4-bit often beats a smaller model at 16-bit. For precise tasks such as code or structured extraction, test 8-bit as well before deciding.</p>
+</details>
+<details>
+<summary>Can I combine different GPUs in one server?</summary>
+<p>Technically yes, but splitting one model across different GPU models is limited by the slowest card and the smallest memory. Identical GPUs are simpler to run and to scale.</p>
+</details>
+<details>
+<summary>Do I need server CPUs and ECC memory?</summary>
+<p>For a production server, yes: server platforms give enough PCIe lanes for several GPUs at full bandwidth, plenty of memory channels and ECC memory for reliability.</p>
+</details>
+</section>
+<section id="sources" class="nodex-sources"><h2>Sources</h2><p>Specifications and platform details on this page come from the published sources below. Prices come from our configurator on the date shown at the top of the page.</p><ul><li><a href="https://www.nvidia.com/en-us/data-center/rtx-pro-6000-blackwell-server-edition/">NVIDIA: RTX PRO 6000 Blackwell Server Edition</a></li><li><a href="https://www.nvidia.com/en-us/data-center/h200/">NVIDIA: H200 Tensor Core GPU (H200 NVL)</a></li><li><a href="https://docs.vllm.ai/en/latest/">vLLM documentation</a></li></ul></section></article>
+<section class="nodex-content nodex-related-guides" aria-label="Guides"><h2>Guides</h2><div class="nodex-grid"><div class="nodex-card"><h3><a href="/rtx-pro-6000/">RTX PRO 6000 Blackwell: price, editions and specifications</a></h3><p>Server, Workstation and Max-Q editions compared, full specifications, EU prices from $11,900 and how it compares with the RTX 5090.</p></div><div class="nodex-card"><h3><a href="/rtx-pro-6000-vs-rtx-5090/">RTX PRO 6000 vs RTX 5090: which GPU for AI work?</a></h3><p>Specifications, price per GB, cost at equal memory, power and which models each GPU runs, with indicative EU prices.</p></div><div class="nodex-card"><h3><a href="/h200-nvl/">NVIDIA H200 NVL: price, specifications and servers</a></h3><p>141GB HBM3e specifications, NVL vs SXM, EU prices for one to eight GPUs and what an H200 NVL server needs.</p></div><div class="nodex-card"><h3><a href="/rtx-4090-48gb/">RTX 4090 48GB for AI: specifications, price and buying in the EU</a></h3><p>Specifications, what fits in 48GB of VRAM, prices compared with the RTX 3090 48GB, RTX 5090 and RTX PRO 6000, and what to check before buying.</p></div></div></section></main>

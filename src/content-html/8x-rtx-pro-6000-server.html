@@ -1,0 +1,182 @@
+<main id="main-content" class="nodex-main">
+<article class="nodex-content nodex-guide" lang="en"><nav class="nodex-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="nodex-breadcrumbs-sep" aria-hidden="true">/</span><a href="/guides/">Guides</a><span class="nodex-breadcrumbs-sep" aria-hidden="true">/</span><span aria-current="page">8x RTX PRO 6000 Server</span></nav>
+<header class="nodex-hero">
+<p class="nodex-eyebrow">REFERENCE CONFIGURATION · UPDATED 10 NOVEMBER 2026</p>
+<h1>8× RTX PRO 6000 server: reference configuration and price</h1>
+<p>Eight NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs give 768GB of GPU memory in a single 4U server. Below are two reference builds on our NX-G8 Dual SP5 platform with dual AMD EPYC 9004-series processors, with every component and its indicative price from our online configurator, followed by what to plan for power, cooling and software.</p>
+<div class="nodex-actions"><a class="nodex-button" href="/product/nx-g8-dual-sp5/">Configure this server</a><a href="/request-a-quote/">Request a quote</a></div>
+</header><nav class="nodex-toc" aria-label="On this page"><p class="nodex-toc-title">On this page</p><ol><li><a href="#at-a-glance">At a glance</a></li><li><a href="#builds">Two reference builds for an 8× RTX PRO 6000 server</a></li><li><a href="#why">Why these components</a></li><li><a href="#workloads">What 768GB of GPU memory is good for</a></li><li><a href="#power">Power, cooling and where it runs</a></li><li><a href="#alternatives">Alternatives</a></li><li><a href="#nodex">Get this server from NodeX</a></li><li><a href="#faq">Frequently asked questions</a></li><li><a href="#sources">Sources</a></li></ol></nav>
+<section id="at-a-glance">
+<h2>At a glance</h2>
+<div class="nodex-grid">
+<div class="nodex-card">
+<h3>768GB GPU memory</h3>
+<p>8 × 96GB GDDR7 with ECC. Each GPU can be split into up to four isolated instances with Multi-Instance GPU.</p>
+</div>
+<div class="nodex-card">
+<h3>Dual AMD EPYC 9004</h3>
+<p>Socket SP5 platform with DDR5 ECC registered memory in up to 24 slots.</p>
+</div>
+<div class="nodex-card">
+<h3>Up to 4.8kW for the GPUs</h3>
+<p>Each RTX PRO 6000 Server Edition draws up to 600W (configurable) and relies on the server&#8217;s airflow.</p>
+</div>
+<div class="nodex-card">
+<h3>From $121,384 indicative</h3>
+<p>Including eight GPUs, processors, memory, storage, networking and a 3-year commercial hardware warranty.</p>
+</div>
+</div>
+</section>
+<section id="builds">
+<h2>Two reference builds for an 8× RTX PRO 6000 server</h2>
+<p>Indicative prices in US dollars from our configurator on 10 November 2026. VAT, delivery and availability are confirmed in your written quote, and component prices — especially for GPUs and memory — can change.</p>
+<div class="nodex-table-scroll">
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Balanced build</th>
+<th>Price</th>
+<th>Entry build</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Platform</td>
+<td>NX-G8 Dual SP5</td>
+<td>$8,162.00</td>
+<td>NX-G8 Dual SP5</td>
+<td>$8,162.00</td>
+</tr>
+<tr>
+<td>GPUs</td>
+<td>8× RTX PRO 6000 Blackwell Server Edition 96GB</td>
+<td>$95,200.00</td>
+<td>8× RTX PRO 6000 Blackwell Server Edition 96GB</td>
+<td>$95,200.00</td>
+</tr>
+<tr>
+<td>Processors</td>
+<td>2× AMD EPYC 9354, 32 cores, 3.3 GHz, 256MB L3</td>
+<td>$3,612.00</td>
+<td>2× AMD EPYC 9124, 16 cores, 3.0 GHz, 64MB L3</td>
+<td>$1,960.00</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>24× 32GB DDR5-4800 ECC RDIMM (768GB)</td>
+<td>$26,400.00</td>
+<td>12× 32GB DDR5-4800 ECC RDIMM (384GB)</td>
+<td>$13,200.00</td>
+</tr>
+<tr>
+<td>Data storage</td>
+<td>7.68TB U.2 NVMe (Samsung PM9A3)</td>
+<td>$3,750.00</td>
+<td>3.84TB U.2 NVMe (Samsung PM9A3)</td>
+<td>$2,050.00</td>
+</tr>
+<tr>
+<td>System storage</td>
+<td>2× 1.92TB M.2 NVMe (Samsung PM9A3)</td>
+<td>$2,700.00</td>
+<td>2× 1TB M.2 NVMe (Samsung 990 PRO)</td>
+<td>$580.00</td>
+</tr>
+<tr>
+<td>Network</td>
+<td>2-port 100GbE (QSFP28)</td>
+<td>$578.20</td>
+<td>2-port 25GbE (SFP28)</td>
+<td>$212.40</td>
+</tr>
+<tr>
+<td>Operating system</td>
+<td>Ubuntu Server 24.04 LTS installation</td>
+<td>$20.00</td>
+<td>Ubuntu Server 24.04 LTS installation</td>
+<td>$20.00</td>
+</tr>
+<tr>
+<td>Rails, power cables</td>
+<td>Included</td>
+<td>$0.00</td>
+<td>Included</td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>Warranty</td>
+<td>3-year commercial hardware warranty</td>
+<td>Included</td>
+<td>3-year commercial hardware warranty</td>
+<td>Included</td>
+</tr>
+<tr>
+<td><strong>Indicative total</strong></td>
+<td></td>
+<td><strong>$140,422.20</strong></td>
+<td></td>
+<td><strong>$121,384.40</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>A 5-year commercial hardware warranty upgrade can be selected in the configurator; its scope and price are confirmed in the quote.</p>
+</section>
+<section id="why">
+<h2>Why these components</h2>
+<ul>
+<li><strong>Memory equal to GPU memory.</strong> The balanced build has 768GB of system memory, the same as the GPUs, which makes loading large models and feeding data pipelines easier. Its 24 modules populate all 12 DDR5 channels of each EPYC 9004 processor for full memory bandwidth.</li>
+<li><strong>Eight CPU cores per GPU.</strong> Two 32-core EPYC 9354 processors leave headroom for data preparation, tokenisation and serving software. The entry build&#8217;s two 16-core EPYC 9124 processors suit inference where models are loaded once and the GPUs do the work.</li>
+<li><strong>Local NVMe.</strong> Model weights for 768GB of GPU memory are large; fast local storage shortens load times and holds datasets and checkpoints.</li>
+<li><strong>Networking for the workload.</strong> 100GbE suits fast data transfer or several servers working together; 25GbE is enough for a single inference server serving users.</li>
+</ul>
+</section>
+<section id="workloads">
+<h2>What 768GB of GPU memory is good for</h2>
+<ul>
+<li><strong>Serving several large models at once</strong>, for example multiple 70B-class models in 8-bit, each on its own GPU or pair of GPUs.</li>
+<li><strong>Very large models across all eight GPUs.</strong> Models with several hundred billion parameters can fit in 8-bit or 4-bit form using tensor or pipeline parallelism. The RTX PRO 6000 has no NVLink, so GPUs communicate over PCIe; this works well for inference but is slower than NVLink-connected systems for training a single large model.</li>
+<li><strong>Multi-team or multi-tenant use.</strong> With Multi-Instance GPU, each card can be divided into up to four isolated instances — up to 32 in one server.</li>
+<li><strong>Fine-tuning, rendering and simulation</strong>, where Blackwell&#8217;s FP4 and FP8 support, RT cores and video engines are useful.</li>
+</ul>
+</section>
+<section id="power">
+<h2>Power, cooling and where it runs</h2>
+<p>The eight GPUs alone can draw up to 4.8kW, so the complete server needs more than 5kW at full load. Plan a rack position, power circuits and cooling for that load. The passive GPUs depend on strong front-to-back airflow, and the server is loud — a data centre or colocation facility is the right place for it. We confirm the power budget and power supply configuration in the quote and can arrange colocation in Bulgaria.</p>
+</section>
+<section id="alternatives">
+<h2>Alternatives</h2>
+<ul>
+<li><strong>More memory bandwidth:</strong> eight H200 NVL GPUs give 1,128GB of HBM3e and NVLink between GPUs, at about $235,920 for the GPUs alone at indicative prices. See <a href="/rtx-pro-6000-vs-h200/">RTX PRO 6000 vs H200 NVL</a>.</li>
+<li><strong>Lower budget:</strong> fewer RTX PRO 6000 GPUs now, with room to add more later in the same platform, or RTX 5090 32GB cards for models that fit in 32GB per GPU.</li>
+<li><strong>Single-socket or PCIe 4.0 platforms:</strong> our <a href="/our-products/">other 4U servers</a> cost less but run PCIe 5.0 GPUs at PCIe 4.0 speed.</li>
+</ul>
+</section>
+<section id="nodex">
+<h2>Get this server from NodeX</h2><figure class="nodex-guide-photo"><a href="/product/nx-g8-dual-sp5/"><img src="/wp-content/plugins/ai-server-quote-system/assets/nodex-nx-g8-dual-sp5-800.webp" width="800" height="333" alt="NodeX NX-G8 Dual SP5, the platform of the 8× RTX PRO 6000 server" loading="lazy" decoding="async"></a><figcaption><a href="/product/nx-g8-dual-sp5/">NX-G8 Dual SP5: up to 8 GPUs with dual AMD EPYC SP5 processors and DDR5 ECC memory.</a></figcaption></figure>
+<p>Start from one of the builds above in the configurator, change any component, and send the configuration as an enquiry. We check compatibility, power and cooling and reply with a written quotation that states the final price, lead time and warranty. Submitting an enquiry does not place an order.</p>
+<div class="nodex-actions"><a class="nodex-button" href="/product/nx-g8-dual-sp5/">Open the configurator</a><a href="/request-a-quote/">Request a quote</a></div>
+</section>
+<section id="faq">
+<h2>Frequently asked questions</h2>
+<details>
+<summary>Are these prices final?</summary>
+<p>No. They are indicative prices from our configurator. The written quotation confirms the final price, VAT, delivery and availability. GPU and memory prices in particular change over time.</p>
+</details>
+<details>
+<summary>Can I use the RTX PRO 6000 Workstation Edition instead?</summary>
+<p>The Server Edition is designed for passive cooling in servers like this one. The Workstation Edition has its own fans for desktop workstations. Ask us if you have a specific reason to consider it.</p>
+</details>
+<details>
+<summary>Can this server be used for GPU rental on Vast.ai?</summary>
+<p>Yes, it can be set up for rental platforms, but income depends on demand and is not guaranteed. Read our <a href="/vast-ai-hosting/">Vast.ai hosting guide</a> before deciding.</p>
+</details>
+<details>
+<summary>Which warranty is included?</summary>
+<p>A 3-year commercial hardware warranty is included, with an optional 5-year upgrade. The scope is confirmed in the quote, and your statutory rights are unaffected. See our <a href="/warranty-policy/">Warranty Policy</a>.</p>
+</details>
+</section>
+<section id="sources" class="nodex-sources"><h2>Sources</h2><p>Specifications and platform details on this page come from the published sources below. Prices come from our configurator on the date shown at the top of the page.</p><ul><li><a href="https://www.nvidia.com/en-us/data-center/rtx-pro-6000-blackwell-server-edition/">NVIDIA: RTX PRO 6000 Blackwell Server Edition</a></li></ul></section></article>
+<section class="nodex-content nodex-related-guides" aria-label="Guides"><h2>Guides</h2><div class="nodex-grid"><div class="nodex-card"><h3><a href="/rtx-pro-6000/">RTX PRO 6000 Blackwell: price, editions and specifications</a></h3><p>Server, Workstation and Max-Q editions compared, full specifications, EU prices from $11,900 and how it compares with the RTX 5090.</p></div><div class="nodex-card"><h3><a href="/h200-nvl/">NVIDIA H200 NVL: price, specifications and servers</a></h3><p>141GB HBM3e specifications, NVL vs SXM, EU prices for one to eight GPUs and what an H200 NVL server needs.</p></div><div class="nodex-card"><h3><a href="/buy-or-rent-gpu-server/">Buy or rent a GPU server? Where the break-even point is</a></h3><p>Break-even hours for the RTX PRO 6000, H200 NVL and RTX 5090 against Vast.ai rental prices, a complete 8-GPU server and what the numbers leave out.</p></div><div class="nodex-card"><h3><a href="/local-llm-server/">Local LLM server: how much GPU memory do you need?</a></h3><p>The arithmetic for model weights and context, a sizing table from 8B to 670B parameters and the hardware for each tier.</p></div></div></section></main>

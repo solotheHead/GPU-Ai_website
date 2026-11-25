@@ -1,0 +1,254 @@
+<main id="main-content" class="nodex-main">
+<article class="nodex-content nodex-guide" lang="en"><nav class="nodex-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="nodex-breadcrumbs-sep" aria-hidden="true">/</span><a href="/guides/">Guides</a><span class="nodex-breadcrumbs-sep" aria-hidden="true">/</span><span aria-current="page">NVIDIA H200 NVL</span></nav>
+<header class="nodex-hero">
+<p class="nodex-eyebrow">GPU GUIDE · UPDATED 11 NOVEMBER 2026</p>
+<h1>NVIDIA H200 NVL: price, specifications and servers</h1>
+<p>The NVIDIA H200 NVL is the PCIe version of the H200: 141GB of HBM3e memory with 4.8TB/s of bandwidth in a dual-slot card that fits standard GPU servers, with NVLink bridges to connect two or four cards. This page covers the specifications, how the NVL differs from the H200 SXM, our indicative EU prices for one to eight GPUs and what an H200 NVL server needs.</p>
+<div class="nodex-actions"><a class="nodex-button" href="/request-a-quote/">Request an H200 NVL quote</a><a href="#specifications">See the specifications</a></div>
+</header><nav class="nodex-toc" aria-label="On this page"><p class="nodex-toc-title">On this page</p><ol><li><a href="#glance">At a glance</a></li><li><a href="#specifications">H200 NVL specs</a></li><li><a href="#nvl-vs-sxm">H200 NVL vs H200 SXM</a></li><li><a href="#price">H200 NVL price in the EU</a></li><li><a href="#workloads">What H200 NVL servers are good for</a></li><li><a href="#vs-rtx-pro-6000">H200 NVL or RTX PRO 6000?</a></li><li><a href="#server-requirements">What an H200 NVL server needs</a></li><li><a href="#nodex">H200 NVL servers from NodeX</a></li><li><a href="#faq">Frequently asked questions</a></li><li><a href="#sources">Sources</a></li></ol></nav>
+<section id="glance">
+<h2>At a glance</h2>
+<div class="nodex-grid">
+<div class="nodex-card">
+<h3>141GB HBM3e</h3>
+<p>The largest memory of any PCIe GPU we offer, for big models, long contexts and many concurrent users.</p>
+</div>
+<div class="nodex-card">
+<h3>4.8TB/s bandwidth</h3>
+<p>About three times the RTX PRO 6000, which speeds up token generation when a model is memory-bound.</p>
+</div>
+<div class="nodex-card">
+<h3>NVLink bridges</h3>
+<p>Two or four cards can be linked at 900GB/s per GPU, which helps when one model is split across GPUs.</p>
+</div>
+<div class="nodex-card">
+<h3>$29,490 at NodeX</h3>
+<p>Indicative price per card in our configurator on 11 November 2026, confirmed in your written quote.</p>
+</div>
+</div>
+</section>
+<section id="specifications">
+<h2>H200 NVL specs</h2>
+<p>Figures from NVIDIA&#8217;s published specifications, which NVIDIA marks as preliminary. Tensor Core figures are with sparsity, as NVIDIA states.</p>
+<div class="nodex-table-scroll">
+<table>
+<thead>
+<tr>
+<th>Specification</th>
+<th>NVIDIA H200 NVL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Architecture</td>
+<td>NVIDIA Hopper</td>
+</tr>
+<tr>
+<td>GPU memory</td>
+<td>141GB HBM3e</td>
+</tr>
+<tr>
+<td>Memory bandwidth</td>
+<td>4.8TB/s</td>
+</tr>
+<tr>
+<td>FP8 Tensor Core</td>
+<td>3,341 TFLOPS (with sparsity)</td>
+</tr>
+<tr>
+<td>FP16 / BF16 Tensor Core</td>
+<td>1,671 TFLOPS (with sparsity)</td>
+</tr>
+<tr>
+<td>TF32 Tensor Core</td>
+<td>835 TFLOPS (with sparsity)</td>
+</tr>
+<tr>
+<td>FP32</td>
+<td>60 TFLOPS</td>
+</tr>
+<tr>
+<td>FP64 / FP64 Tensor Core</td>
+<td>30 / 60 TFLOPS</td>
+</tr>
+<tr>
+<td>Decoders</td>
+<td>7 NVDEC, 7 JPEG</td>
+</tr>
+<tr>
+<td>Multi-Instance GPU</td>
+<td>Up to 7 instances of 16.5GB</td>
+</tr>
+<tr>
+<td>Confidential computing</td>
+<td>Supported</td>
+</tr>
+<tr>
+<td>Maximum power</td>
+<td>Up to 600W, configurable</td>
+</tr>
+<tr>
+<td>Form factor</td>
+<td>PCIe, dual-slot, air-cooled</td>
+</tr>
+<tr>
+<td>Interconnect</td>
+<td>2- or 4-way NVLink bridge at 900GB/s per GPU; PCIe Gen5 at 128GB/s</td>
+</tr>
+<tr>
+<td>NVIDIA AI Enterprise</td>
+<td>Included, according to NVIDIA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="nvl-vs-sxm">
+<h2>H200 NVL vs H200 SXM</h2>
+<p>Both have 141GB of HBM3e at 4.8TB/s. The difference is the form factor and the server around it.</p>
+<div class="nodex-table-scroll">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>H200 NVL</th>
+<th>H200 SXM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Form factor</td>
+<td>PCIe card, dual-slot</td>
+<td>SXM module on a GPU baseboard</td>
+</tr>
+<tr>
+<td>Servers</td>
+<td>Standard PCIe GPU servers, up to 8 GPUs</td>
+<td>HGX H200 systems with 4 or 8 GPUs</td>
+</tr>
+<tr>
+<td>GPU-to-GPU link</td>
+<td>NVLink bridges for 2 or 4 GPUs, 900GB/s per GPU</td>
+<td>NVLink at 900GB/s</td>
+</tr>
+<tr>
+<td>Maximum power</td>
+<td>Up to 600W</td>
+<td>Up to 700W</td>
+</tr>
+<tr>
+<td>FP8 Tensor Core</td>
+<td>3,341 TFLOPS (with sparsity)</td>
+<td>3,958 TFLOPS (with sparsity)</td>
+</tr>
+<tr>
+<td>Multi-Instance GPU</td>
+<td>Up to 7 × 16.5GB</td>
+<td>Up to 7 × 18GB</td>
+</tr>
+<tr>
+<td>NVIDIA AI Enterprise</td>
+<td>Included</td>
+<td>Add-on</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The SXM version gives somewhat more compute per GPU, but it only comes in HGX systems built around a GPU baseboard — a different class of server. The NVL fits the same kind of 4U PCIe GPU server as other professional GPUs, which is what we build.</p>
+</section>
+<section id="price">
+<h2>H200 NVL price in the EU</h2>
+<p>NodeX sells the H200 NVL as part of a complete GPU server, built and tested in Bulgaria. Indicative GPU prices on 11 November 2026:</p>
+<div class="nodex-table-scroll">
+<table>
+<thead>
+<tr>
+<th>Configuration</th>
+<th>Total GPU memory</th>
+<th>GPUs at indicative prices</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1× H200 NVL</td>
+<td>141GB</td>
+<td>$29,490 (about $209 per GB)</td>
+</tr>
+<tr>
+<td>2× H200 NVL</td>
+<td>282GB</td>
+<td>$58,980</td>
+</tr>
+<tr>
+<td>4× H200 NVL</td>
+<td>564GB</td>
+<td>$117,960</td>
+</tr>
+<tr>
+<td>8× H200 NVL</td>
+<td>1,128GB</td>
+<td>$235,920</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>These totals cover the GPUs only. The platform, processors, memory, storage, networking, NVLink bridges, assembly and warranty are confirmed and priced in your quotation. VAT, delivery and availability are confirmed there too.</p>
+</section>
+<section id="workloads">
+<h2>What H200 NVL servers are good for</h2>
+<div class="nodex-grid">
+<div class="nodex-card">
+<h3>One card: 141GB</h3>
+<p>70B models in 8-bit with long contexts and many concurrent users.</p>
+</div>
+<div class="nodex-card">
+<h3>Two cards: 282GB</h3>
+<p>70B models in 16-bit with room for context, linked by an NVLink bridge.</p>
+</div>
+<div class="nodex-card">
+<h3>Four cards: 564GB</h3>
+<p>400B-class models in 8-bit, about 400GB of weights, with room for context.</p>
+</div>
+<div class="nodex-card">
+<h3>Eight cards: 1,128GB</h3>
+<p>670B-class models in 8-bit, about 670GB of weights, on a single server.</p>
+</div>
+</div>
+<p>The H200 NVL also suits FP64 scientific computing, at 30 TFLOPS FP64 and 60 TFLOPS FP64 Tensor Core per card. For the sizing arithmetic, see <a href="/local-llm-server/">how much GPU memory a local LLM server needs</a>.</p>
+</section>
+<section id="vs-rtx-pro-6000">
+<h2>H200 NVL or RTX PRO 6000?</h2>
+<p>The RTX PRO 6000 Blackwell has 96GB for $11,900 (indicative), about $124 per GB against about $209 for the H200 NVL, and adds FP4 support and graphics capabilities. The H200 NVL wins when memory bandwidth, capacity per GPU, NVLink or FP64 matter. Our <a href="/rtx-pro-6000-vs-h200/">RTX PRO 6000 vs H200 NVL comparison</a> goes through the numbers in detail.</p>
+</section>
+<section id="server-requirements">
+<h2>What an H200 NVL server needs</h2>
+<ul>
+<li><strong>Airflow.</strong> The card is passively cooled and depends on the server&#8217;s fans, so the chassis must be designed for passive 600W GPUs.</li>
+<li><strong>Power.</strong> Eight cards can draw about 4.8kW for the GPUs alone, before processors, memory and storage. Plan the power and cooling of the room or colocation before you buy.</li>
+<li><strong>PCIe 5.0.</strong> To use the card&#8217;s PCIe Gen5 link, the platform needs PCIe 5.0 slots — for example AMD EPYC 9004-series (SP5) processors in our <a href="/product/nx-g8-dual-sp5/">NX-G8 Dual SP5</a>.</li>
+<li><strong>NVLink spacing.</strong> NVLink bridges need matching slot spacing between the linked cards.</li>
+</ul>
+<p>We confirm all of this for your platform in the quotation.</p>
+</section>
+<section id="nodex">
+<h2>H200 NVL servers from NodeX</h2><figure class="nodex-guide-photo"><a href="/product/nx-g8-dual-sp5/"><img src="/wp-content/plugins/ai-server-quote-system/assets/nodex-nx-g8-dual-sp5-800.webp" width="800" height="333" alt="NodeX NX-G8 Dual SP5 GPU server for H200 NVL configurations" loading="lazy" decoding="async"></a><figcaption><a href="/product/nx-g8-dual-sp5/">NX-G8 Dual SP5: up to 8 GPUs with dual AMD EPYC SP5 processors and DDR5 ECC memory.</a></figcaption></figure>
+<p>We build 4U GPU servers in Bulgaria with one to eight H200 NVL GPUs, tested before delivery. We can also arrange colocation in Bulgaria and install the operating system. Tell us your models, number of users and context length, and we will propose a configuration in a written quotation.</p>
+<div class="nodex-actions"><a class="nodex-button" href="/request-a-quote/">Request a quote</a><a href="/our-products/">See GPU servers</a></div>
+</section>
+<section id="faq">
+<h2>Frequently asked questions</h2>
+<details>
+<summary>What is the difference between the H200 NVL and the H100 NVL?</summary>
+<p>The H100 NVL has 94GB of memory; the H200 NVL has 141GB of HBM3e at 4.8TB/s. More memory lets larger models and longer contexts run on each card.</p>
+</details>
+<details>
+<summary>Do I need NVLink bridges?</summary>
+<p>Not for running separate models on each GPU. They help when one model is split across two or four cards, because the GPUs exchange data much faster than over PCIe. Bridges are confirmed and priced in your quotation.</p>
+</details>
+<details>
+<summary>Can the H200 NVL go in any server?</summary>
+<p>No. It needs a server designed for passive 600W GPUs with sufficient airflow and power. We confirm compatibility for your platform in the quotation.</p>
+</details>
+</section>
+<section id="sources" class="nodex-sources"><h2>Sources</h2><p>Specifications and platform details on this page come from the published sources below. Prices come from our configurator on the date shown at the top of the page.</p><ul><li><a href="https://www.nvidia.com/en-us/data-center/h200/">NVIDIA: H200 Tensor Core GPU (H200 NVL)</a></li></ul></section></article>
+<section class="nodex-content nodex-related-guides" aria-label="Guides"><h2>Guides</h2><div class="nodex-grid"><div class="nodex-card"><h3><a href="/rtx-pro-6000-vs-h200/">RTX PRO 6000 vs H200 NVL: which GPU for your AI server?</a></h3><p>Memory, bandwidth, FP4 and FP8, power, NVLink and 8-GPU costs compared, with recommendations by workload.</p></div><div class="nodex-card"><h3><a href="/rtx-pro-6000/">RTX PRO 6000 Blackwell: price, editions and specifications</a></h3><p>Server, Workstation and Max-Q editions compared, full specifications, EU prices from $11,900 and how it compares with the RTX 5090.</p></div><div class="nodex-card"><h3><a href="/buy-or-rent-gpu-server/">Buy or rent a GPU server? Where the break-even point is</a></h3><p>Break-even hours for the RTX PRO 6000, H200 NVL and RTX 5090 against Vast.ai rental prices, a complete 8-GPU server and what the numbers leave out.</p></div><div class="nodex-card"><h3><a href="/local-llm-server/">Local LLM server: how much GPU memory do you need?</a></h3><p>The arithmetic for model weights and context, a sizing table from 8B to 670B parameters and the hardware for each tier.</p></div></div></section></main>

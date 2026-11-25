@@ -1,0 +1,191 @@
+<main id="main-content" class="nodex-main">
+<article class="nodex-content nodex-guide" lang="en"><nav class="nodex-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="nodex-breadcrumbs-sep" aria-hidden="true">/</span><a href="/guides/">Guides</a><span class="nodex-breadcrumbs-sep" aria-hidden="true">/</span><span aria-current="page">Buy or rent a GPU server</span></nav>
+<header class="nodex-hero">
+<p class="nodex-eyebrow">GPU GUIDE · UPDATED 12 NOVEMBER 2026</p>
+<h1>Buy or rent a GPU server? Where the break-even point is</h1>
+<p>Renting GPU capacity costs nothing up front; buying costs a lot once and little per hour. Which is cheaper depends on how many hours you will actually use the GPUs. This guide compares the purchase price of three GPUs we sell with the rental prices on the Vast.ai marketplace, works out the break-even point and lists what the numbers leave out.</p>
+<div class="nodex-actions"><a class="nodex-button" href="/request-a-quote/">Request a server quote</a><a href="#break-even">See the break-even table</a></div>
+</header><nav class="nodex-toc" aria-label="On this page"><p class="nodex-toc-title">On this page</p><ol><li><a href="#short-answer">The short answer</a></li><li><a href="#rent">What renting costs</a></li><li><a href="#own">What owning costs</a></li><li><a href="#break-even">Break-even: when buying pays off</a></li><li><a href="#calculator">Calculate your own break-even</a></li><li><a href="#full-server">A complete 8-GPU server</a></li><li><a href="#beyond-price">What the numbers leave out</a></li><li><a href="#hybrid">Owning and renting out idle time</a></li><li><a href="#decide">How to decide</a></li><li><a href="#nodex">GPU servers from NodeX</a></li><li><a href="#faq">Frequently asked questions</a></li><li><a href="#sources">Sources</a></li></ol></nav>
+<section id="short-answer">
+<h2>The short answer</h2>
+<ul>
+<li><strong>Rent</strong> for short projects, experiments and uneven demand. You pay only for the hours you use and can switch GPU models at any time.</li>
+<li><strong>Buy</strong> when the GPUs will be busy most of the time. Against the median rental prices below, a purchased GPU pays for itself after about 9–12 months of continuous use, or 19–23 months at half load.</li>
+<li><strong>Combine</strong> the two: own the capacity you use every day and rent extra GPUs for peaks.</li>
+</ul>
+</section>
+<section id="rent">
+<h2>What renting costs</h2>
+<p>Vast.ai is a marketplace where hosts set their own prices, so rates move with supply and demand. Its pricing page shows the lowest current offer and the 30-day median price per GPU per hour. On 12 November 2026 it showed:</p>
+<div class="nodex-table-scroll">
+<table>
+<thead>
+<tr>
+<th>GPU</th>
+<th>Lowest current offer</th>
+<th>30-day median</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RTX PRO 6000 Blackwell Server Edition (96GB)</td>
+<td>$1.07 per hour</td>
+<td>$1.67 per hour</td>
+</tr>
+<tr>
+<td>H200 NVL (141GB)</td>
+<td>$3.60 per hour</td>
+<td>$4.39 per hour</td>
+</tr>
+<tr>
+<td>RTX 5090 (32GB)</td>
+<td>$0.39 per hour</td>
+<td>$0.67 per hour</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Prices are per GPU. Offers differ in reliability, location, network speed and the rest of the machine, and storage or data transfer can be charged on top, so check the offer itself. If you compare with another provider, use the price you would actually pay there: a higher rental price brings the break-even point below forward.</p>
+</section>
+<section id="own">
+<h2>What owning costs</h2>
+<p>When you own the GPU, the main running cost per hour is electricity. NVIDIA rates the RTX PRO 6000 Server Edition and the H200 NVL at up to 600W and the RTX 5090 at 575W. At an example tariff of $0.20 per kWh:</p>
+<div class="nodex-table-scroll">
+<table>
+<thead>
+<tr>
+<th>GPU</th>
+<th>NodeX indicative price</th>
+<th>Maximum power</th>
+<th>Electricity per hour at full load</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RTX PRO 6000 Server Edition</td>
+<td>$11,900</td>
+<td>600W</td>
+<td>$0.12</td>
+</tr>
+<tr>
+<td>H200 NVL</td>
+<td>$29,490</td>
+<td>600W</td>
+<td>$0.12</td>
+</tr>
+<tr>
+<td>RTX 5090 (passive, for servers)</td>
+<td>$4,690</td>
+<td>575W</td>
+<td>about $0.115</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The prices are for the GPU alone, from our configurator on 11 November 2026. The server around it — processors, memory, storage, chassis, power supplies — adds to the purchase price, and its fans and processors add to the power draw. We include all of that in the complete-server example below.</p>
+</section>
+<section id="break-even">
+<h2>Break-even: when buying pays off</h2>
+<p>Every hour you use your own GPU instead of renting one saves the rental price minus your electricity cost. The purchase pays for itself after:</p>
+<p><strong>break-even hours = purchase price ÷ (rental price per hour − electricity per hour)</strong></p>
+<p>With the 30-day median rental prices and electricity at $0.20 per kWh (a month is about 730 hours):</p>
+<div class="nodex-table-scroll">
+<table>
+<thead>
+<tr>
+<th>GPU</th>
+<th>Break-even hours</th>
+<th>At 100% use</th>
+<th>At 50% use</th>
+<th>At 25% use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RTX PRO 6000 Server Edition</td>
+<td>about 7,680</td>
+<td>10.5 months</td>
+<td>21 months</td>
+<td>42 months</td>
+</tr>
+<tr>
+<td>H200 NVL</td>
+<td>about 6,910</td>
+<td>9.5 months</td>
+<td>19 months</td>
+<td>38 months</td>
+</tr>
+<tr>
+<td>RTX 5090</td>
+<td>about 8,450</td>
+<td>11.6 months</td>
+<td>23 months</td>
+<td>46 months</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Two things move the result. The rental price matters most: against the lowest current offers instead of the median, full-use break-even takes about 17 months for the RTX PRO 6000, 12 months for the H200 NVL and 23 months for the RTX 5090. Electricity matters much less: at $0.30 per kWh, the RTX PRO 6000 breaks even after about 10.9 months of full use instead of 10.5.</p>
+</section><section id="calculator" class="nodex-calc-section"><h2>Calculate your own break-even</h2><p>Change any value: the result updates as you type. Choosing a GPU fills in its NodeX price, the Vast.ai median rental price and NVIDIA&#039;s maximum power.</p><form data-nx-form-stub="1" class="nodex-calc" data-nodex-calc data-lang="en" onsubmit="return false"><div class="nodex-calc-grid"><label class="nodex-calc-field"><span>GPU</span><select name="gpu"><option value="0" data-price="11900" data-rent="1.67" data-power="600">RTX PRO 6000 Server Edition</option><option value="1" data-price="29490" data-rent="4.39" data-power="600">H200 NVL</option><option value="2" data-price="4690" data-rent="0.67" data-power="575">RTX 5090</option></select></label><label class="nodex-calc-field"><span>Number of GPUs</span><input type="number" name="count" value="1" min="1" max="64" step="1" inputmode="numeric"></label><label class="nodex-calc-field"><span>Purchase price per GPU ($)</span><input type="number" name="price" value="11900" min="0" step="1" inputmode="decimal"></label><label class="nodex-calc-field"><span>Rental price per GPU-hour ($)</span><input type="number" name="rent" value="1.67" min="0" step="0.01" inputmode="decimal"></label><label class="nodex-calc-field"><span>Power per GPU (W)</span><input type="number" name="power" value="600" min="0" step="1" inputmode="numeric"></label><label class="nodex-calc-field"><span>Electricity ($ per kWh)</span><input type="number" name="kwh" value="0.2" min="0" step="0.01" inputmode="decimal"></label><label class="nodex-calc-field"><span>Expected use (% of the time)</span><input type="number" name="use" value="50" min="1" max="100" step="1" inputmode="numeric"></label></div><div class="nodex-calc-result" aria-live="polite" data-nodex-calc-result><p>Turn on JavaScript to use the calculator; the table above shows the same calculation.</p></div></form><p class="nodex-calc-note">GPU only: the server platform, colocation, internet and maintenance are not included. Prices without VAT; rental prices change daily.</p></section>
+<section id="full-server">
+<h2>A complete 8-GPU server</h2>
+<p>A GPU needs a server. Our <a href="/8x-rtx-pro-6000-server/">reference 8× RTX PRO 6000 server</a> costs from $121,384 indicative, including eight GPUs, processors, memory, storage, networking and a 3-year commercial hardware warranty. It needs more than 5kW at full load.</p>
+<p>Renting eight RTX PRO 6000 GPUs at the median price costs $13.36 per hour. With the server drawing 5kW at $0.20 per kWh ($1.00 per hour), owning it saves about $12.36 per hour of use, so the complete server pays for itself after about 9,820 hours: about 13.5 months at full use, 27 months at half load or 54 months at a quarter. Colocation or your own premises, internet and maintenance come on top and lengthen these periods.</p>
+</section>
+<section id="beyond-price">
+<h2>What the numbers leave out</h2>
+<ul>
+<li><strong>Your data stays with you.</strong> On your own server, models, prompts and datasets never leave hardware you control, which can settle compliance questions that make cloud use difficult.</li>
+<li><strong>Availability.</strong> Marketplace capacity depends on what hosts offer at the moment. Your own GPUs are there when you need them, at a known cost.</li>
+<li><strong>Work and responsibility.</strong> Owning means installation, monitoring, repairs and a place with enough power and cooling. Renting leaves that to the host. A managed service can take this work over for an agreed fee.</li>
+<li><strong>Resale value.</strong> A purchased GPU keeps a resale value; rental payments do not. Newer models do push prices down over time, so plan for a realistic useful life.</li>
+<li><strong>Price changes.</strong> Rental prices for a GPU model usually fall as newer models arrive, which lengthens the break-even period of a purchase made today.</li>
+</ul>
+</section>
+<section id="hybrid">
+<h2>Owning and renting out idle time</h2>
+<p>If your own GPUs are idle part of the time, you can offer that capacity to others on a marketplace such as Vast.ai and use the income to shorten the payback. The host receives the rental price minus the platform fee, demand changes, and the machine has to meet the platform&#8217;s reliability requirements, so this income is variable and not guaranteed. Our <a href="/vast-ai-hosting/">Vast.ai hosting guide</a> explains how hosting works, and our <a href="/gpu-rental-business/">GPU rental business service</a> covers the build, setup and agreed support.</p>
+</section>
+<section id="decide">
+<h2>How to decide</h2>
+<div class="nodex-grid">
+<div class="nodex-card">
+<h3>Rent if</h3>
+<p>the project is short or experimental, the workload is uneven, you are still choosing the GPU model, or you need many GPUs for a few days.</p>
+</div>
+<div class="nodex-card">
+<h3>Buy if</h3>
+<p>the GPUs will run most of the time for a year or more, the data must stay on your hardware, or you want a fixed cost and guaranteed availability.</p>
+</div>
+<div class="nodex-card">
+<h3>Combine if</h3>
+<p>you have a steady base load and occasional peaks: own the base, rent the peaks, and consider renting out what you do not use.</p>
+</div>
+</div>
+</section>
+<section id="nodex">
+<h2>GPU servers from NodeX</h2><figure class="nodex-guide-photo"><a href="/product/nx-g8-dual-sp5/"><img src="/wp-content/plugins/ai-server-quote-system/assets/nodex-nx-g8-dual-sp5-800.webp" width="800" height="333" alt="NodeX NX-G8 Dual SP5 GPU server: your own capacity instead of rented GPUs" loading="lazy" decoding="async"></a><figcaption><a href="/product/nx-g8-dual-sp5/">NX-G8 Dual SP5: up to 8 GPUs with dual AMD EPYC SP5 processors and DDR5 ECC memory.</a></figcaption></figure>
+<p>We build 4U GPU servers in Bulgaria with one to eight RTX PRO 6000, H200 NVL or RTX 5090 GPUs, test them before delivery and can arrange colocation in Bulgaria. Tell us your workload, expected usage and budget, and we will put the configuration and its full cost in a written quotation, so you can compare it with renting on your own numbers.</p>
+<div class="nodex-actions"><a class="nodex-button" href="/request-a-quote/">Request a quote</a><a href="/our-products/">See GPU servers</a></div>
+</section>
+<section id="faq">
+<h2>Frequently asked questions</h2>
+<details>
+<summary>Is renting always cheaper for a short project?</summary>
+<p>Usually. If you need GPUs for weeks rather than years, the rental cost stays far below the purchase price. The table above shows how many hours of use it takes for a purchase to pay off.</p>
+</details>
+<details>
+<summary>Why compare with Vast.ai and not a large cloud provider?</summary>
+<p>Vast.ai is a price-driven marketplace, which makes it a strict comparison for buying. If the provider you would actually use charges more per GPU-hour, a purchase breaks even sooner. Use the formula above with that provider&#8217;s current price.</p>
+</details>
+<details>
+<summary>Does the comparison include VAT?</summary>
+<p>The NodeX prices are indicative; VAT, delivery and availability are confirmed in your written quotation. Check how your rental provider charges VAT as well, so you compare like with like.</p>
+</details>
+<details>
+<summary>Can I rent out my server when I do not need it?</summary>
+<p>Yes, on platforms such as Vast.ai, if the machine meets their requirements. Income depends on demand, your prices and the platform fee, and is not guaranteed.</p>
+</details>
+</section>
+<section id="sources" class="nodex-sources"><h2>Sources</h2><p>Rental prices come from Vast.ai&#039;s pricing page on 12 November 2026 and GPU power ratings from NVIDIA. NodeX prices come from our configurator on 11 November 2026.</p><ul><li><a href="https://vast.ai/pricing">Vast.ai: GPU pricing (live platform rates)</a></li><li><a href="https://www.nvidia.com/en-us/data-center/rtx-pro-6000-blackwell-server-edition/">NVIDIA: RTX PRO 6000 Blackwell Server Edition</a></li><li><a href="https://www.nvidia.com/en-us/data-center/h200/">NVIDIA: H200 Tensor Core GPU (H200 NVL)</a></li><li><a href="https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/">NVIDIA: GeForce RTX 5090</a></li></ul></section></article>
+<section class="nodex-content nodex-related-guides" aria-label="Guides"><h2>Guides</h2><div class="nodex-grid"><div class="nodex-card"><h3><a href="/vast-ai-hosting/">Vast.ai hosting: how to rent out GPU servers</a></h3><p>How hosting works, pricing and verification, host responsibilities, hardware that rents well and how to plan the costs.</p></div><div class="nodex-card"><h3><a href="/rtx-pro-6000/">RTX PRO 6000 Blackwell: price, editions and specifications</a></h3><p>Server, Workstation and Max-Q editions compared, full specifications, EU prices from $11,900 and how it compares with the RTX 5090.</p></div><div class="nodex-card"><h3><a href="/h200-nvl/">NVIDIA H200 NVL: price, specifications and servers</a></h3><p>141GB HBM3e specifications, NVL vs SXM, EU prices for one to eight GPUs and what an H200 NVL server needs.</p></div><div class="nodex-card"><h3><a href="/8x-rtx-pro-6000-server/">8× RTX PRO 6000 server: reference configuration and price</a></h3><p>Two complete builds with eight RTX PRO 6000 GPUs and 768GB of GPU memory, every component priced, plus power and cooling.</p></div></div></section></main>

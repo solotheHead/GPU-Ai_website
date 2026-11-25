@@ -1,0 +1,186 @@
+<main id="main-content" class="nodex-main">
+<article class="nodex-content nodex-guide" lang="en"><nav class="nodex-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="nodex-breadcrumbs-sep" aria-hidden="true">/</span><a href="/guides/">Guides</a><span class="nodex-breadcrumbs-sep" aria-hidden="true">/</span><span aria-current="page">RTX 4090 48GB for AI</span></nav>
+<header class="nodex-hero">
+<p class="nodex-eyebrow">GPU GUIDE · UPDATED 10 NOVEMBER 2026</p>
+<h1>RTX 4090 48GB for AI: specifications, price and buying in the EU</h1>
+<p>The RTX 4090 48GB is a modified GeForce RTX 4090 with twice the standard memory and a dual-slot blower cooler. It gives local LLM inference and multi-GPU servers 48GB of VRAM per card for far less than a professional 48GB or 96GB GPU. This guide explains what the card is, where it fits and what to check before you buy.</p>
+<div class="nodex-actions"><a class="nodex-button" href="/product/custom-graphics-cards/">Request RTX 4090 48GB pricing</a><a href="#compare">Compare with other GPUs</a></div>
+</header><nav class="nodex-toc" aria-label="On this page"><p class="nodex-toc-title">On this page</p><ol><li><a href="#what-it-is">What is the RTX 4090 48GB?</a></li><li><a href="#specifications">Typical RTX 4090 48GB specs</a></li><li><a href="#use-cases">What 48GB of VRAM changes for AI</a></li><li><a href="#compare">RTX 4090 48GB compared with other options</a></li><li><a href="#rtx-3090-48gb">RTX 3090 48GB: the lower-cost alternative</a></li><li><a href="#buying-checklist">Buying a 48GB card: what to check</a></li><li><a href="#nodex">RTX 4090 48GB from NodeX</a></li><li><a href="#faq">Frequently asked questions</a></li><li><a href="#sources">Sources</a></li></ol></nav>
+<section id="what-it-is">
+<h2>What is the RTX 4090 48GB?</h2>
+<p>NVIDIA sells the GeForce RTX 4090 with 24GB of GDDR6X memory. The 48GB version is not an NVIDIA retail product. Specialist manufacturers move the RTX 4090 graphics processor (AD102) onto a custom circuit board with memory chips on both sides — a layout similar to the RTX 3090 — and fit a blower cooler in a dual-slot, server-friendly shape.</p>
+<p>The card keeps the RTX 4090&#8217;s compute engine and 384-bit memory bus, but with 48GB of VRAM. For AI work, that memory often matters more than raw speed: it decides which models fit on one card and how much context you can serve.</p>
+</section>
+<section id="specifications">
+<h2>Typical RTX 4090 48GB specs</h2>
+<p>Exact figures depend on the specific card build. Your quotation confirms the configuration you receive.</p>
+<div class="nodex-table-scroll">
+<table>
+<thead>
+<tr>
+<th>Specification</th>
+<th>RTX 4090 48GB (modified)</th>
+<th>RTX 4090 (standard)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPU</td>
+<td>NVIDIA AD102 (Ada Lovelace)</td>
+<td>NVIDIA AD102 (Ada Lovelace)</td>
+</tr>
+<tr>
+<td>CUDA cores</td>
+<td>16,384</td>
+<td>16,384</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>48GB GDDR6X, 384-bit</td>
+<td>24GB GDDR6X, 384-bit</td>
+</tr>
+<tr>
+<td>Memory bandwidth</td>
+<td>About 1 TB/s</td>
+<td>1,008 GB/s</td>
+</tr>
+<tr>
+<td>Cooling</td>
+<td>Blower, exhausts heat out of the chassis</td>
+<td>Open-air fans on most retail cards</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>Dual-slot</td>
+<td>Usually 3–4 slots</td>
+</tr>
+<tr>
+<td>Board power</td>
+<td>Up to 450W</td>
+<td>450W</td>
+</tr>
+<tr>
+<td>Interface</td>
+<td>PCIe 4.0 x16</td>
+<td>PCIe 4.0 x16</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="use-cases">
+<h2>What 48GB of VRAM changes for AI</h2>
+<p>Large language models usually run out of memory before they run out of compute. As a rule of thumb, model weights need about 2 bytes per parameter at 16-bit precision, 1 byte at 8-bit and about 0.5 bytes at 4-bit, plus memory for the context (KV cache) and the runtime.</p>
+<ul>
+<li><strong>Models around 70B parameters at 4-bit</strong> need roughly 35–40GB for the weights. They fit on one 48GB card with room for a moderate context window, while 24GB cards have to split them across two GPUs.</li>
+<li><strong>Models in the 30B class at 8-bit</strong> fit on a single card with room for longer contexts or several parallel users.</li>
+<li><strong>LoRA and QLoRA fine-tuning</strong>, image and video generation and 3D rendering also benefit from the extra headroom.</li>
+</ul>
+<p>Two cards give 96GB in total — as much memory as one RTX PRO 6000 Blackwell — for about two-thirds of its indicative price. The trade-offs are slower communication between GPUs than within one card and a higher combined power draw (up to 900W against 600W).</p>
+</section>
+<section id="compare">
+<h2>RTX 4090 48GB compared with other options</h2>
+<p>Indicative NodeX prices in US dollars as shown on our website on 10 November 2026. VAT, delivery and availability are confirmed in your written quote.</p>
+<div class="nodex-table-scroll">
+<table>
+<thead>
+<tr>
+<th>GPU</th>
+<th>VRAM</th>
+<th>Memory bandwidth</th>
+<th>Cooling and size</th>
+<th>Indicative price</th>
+<th>Price per GB of VRAM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RTX 3090 48GB (modified)</td>
+<td>48GB GDDR6X</td>
+<td>About 936 GB/s</td>
+<td>Blower, dual-slot</td>
+<td>$2,000</td>
+<td>About $42</td>
+</tr>
+<tr>
+<td>RTX 4090 48GB (modified)</td>
+<td>48GB GDDR6X</td>
+<td>About 1 TB/s</td>
+<td>Blower, dual-slot</td>
+<td>$4,000</td>
+<td>About $83</td>
+</tr>
+<tr>
+<td>RTX 5090 32GB (passive)</td>
+<td>32GB GDDR7</td>
+<td>1.79 TB/s</td>
+<td>Passive, dual-slot</td>
+<td>$4,690</td>
+<td>About $147</td>
+</tr>
+<tr>
+<td>RTX PRO 6000 Blackwell Server Edition</td>
+<td>96GB GDDR7 with ECC</td>
+<td>1.6 TB/s</td>
+<td>Passive, dual-slot</td>
+<td>$11,900</td>
+<td>About $124</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>When the RTX 4090 48GB makes sense:</strong> you want as much VRAM per dollar as possible with current Ada-generation performance, you are building a multi-GPU inference server, or you want several cards in a standard 4U chassis with blower exhaust.</p>
+<p><strong>When to choose something else:</strong> the RTX 3090 48GB if budget matters more than speed; the RTX 5090 if your models fit in 32GB and you want Blackwell features such as FP4; the RTX PRO 6000 if you need 96GB on one card, ECC memory, Multi-Instance GPU and manufacturer-supported professional hardware. Our <a href="/rtx-pro-6000-vs-h200/">RTX PRO 6000 vs H200 NVL guide</a> covers the high end.</p>
+</section>
+<section id="rtx-3090-48gb">
+<h2>RTX 3090 48GB: the lower-cost alternative</h2>
+<p>The RTX 3090 48GB applies the same idea to the previous-generation GA102 processor: 10,496 CUDA cores, 48GB of GDDR6X on a 384-bit bus and about 936 GB/s of memory bandwidth, in a dual-slot blower design. It is slower than the RTX 4090 48GB in compute-heavy work. In memory-bound LLM inference the difference is smaller, because the two cards have similar memory bandwidth. At $2,000 indicative, it is the lowest-cost route to 48GB per card in our range.</p>
+</section>
+<section id="buying-checklist">
+<h2>Buying a 48GB card: what to check</h2>
+<p>Most 48GB RTX cards offered in Europe are sold through marketplaces and import listings. Whoever you buy from, check:</p>
+<ul>
+<li><strong>Who is responsible if the card fails.</strong> NVIDIA does not provide a warranty for modified cards. The seller&#8217;s commercial warranty and your legal rights against the seller are what protect you.</li>
+<li><strong>Invoice, VAT and import costs.</strong> Cards shipped from outside the EU can add import VAT, customs handling and delays to the listed price.</li>
+<li><strong>Testing before dispatch.</strong> Ask which stress and memory tests were run, and whether the card was tested in a configuration like yours.</li>
+<li><strong>Power and airflow.</strong> At up to 450W per card, several cards need suitable power supplies, connectors and strong front-to-back airflow.</li>
+<li><strong>Noise.</strong> Blower coolers are loud under full load. They suit a server room or colocation better than an office.</li>
+<li><strong>Software.</strong> These cards are generally reported to work with standard NVIDIA drivers, but confirm compatibility with your driver, CUDA and framework versions.</li>
+</ul>
+</section>
+<section id="nodex">
+<h2>RTX 4090 48GB from NodeX</h2><figure class="nodex-guide-photo"><a href="/product/custom-graphics-cards/"><img src="/wp-content/plugins/ai-server-quote-system/assets/nodex-custom-blower-gpu-800.webp" width="800" height="390" alt="Modified RTX 4090 48GB / RTX 3090 48GB graphics card with blower cooling" loading="lazy" decoding="async"></a><figcaption><a href="/product/custom-graphics-cards/">Modified RTX 3090 and RTX 4090 48GB cards with blower cooling for multi-GPU servers.</a></figcaption></figure>
+<p>NodeX Servers is the GPU hardware business of Ен Ди Зет ЕООД, a VAT-registered company in Bulgaria (BG207046568). We supply RTX 3090 48GB and RTX 4090 48GB cards on their own or installed in a complete GPU server.</p>
+<ul>
+<li>Your written quotation states the exact card configuration, price, lead time, testing and the applicable commercial warranty.</li>
+<li>Modifications supplied by NodeX form part of the product we sell, and your statutory rights against us as the seller remain unaffected. See our <a href="/warranty-policy/">Warranty Policy</a>.</li>
+<li>Before you order, we confirm physical clearance, power connections, airflow and software compatibility for your system.</li>
+<li>Cards can be built into our 4U GPU servers, for example the <a href="/product/nx-g8-dual-sp3/">NX-G8 Dual SP3</a> with up to 8 GPUs.</li>
+</ul>
+<div class="nodex-actions"><a class="nodex-button" href="/product/custom-graphics-cards/">Request a quote for 48GB cards</a><a href="/our-products/">See GPU servers</a></div>
+</section>
+<section id="faq">
+<h2>Frequently asked questions</h2>
+<details>
+<summary>Is the RTX 4090 48GB an official NVIDIA product?</summary>
+<p>No. NVIDIA&#8217;s retail RTX 4090 has 24GB. The 48GB card is a third-party modification of the RTX 4090 design. The NVIDIA name identifies the underlying technology; it does not mean that NVIDIA authorised the modification or provides a warranty for it.</p>
+</details>
+<details>
+<summary>Can I use it for gaming?</summary>
+<p>It can run games, but it is built for compute. Reviews of 48GB cards report gaming results below a standard RTX 4090 and a loud blower cooler. For gaming, a standard retail card is the better choice.</p>
+</details>
+<details>
+<summary>How many cards fit in one server?</summary>
+<p>The dual-slot blower design allows dense multi-GPU builds. Our NX-G8 Dual SP3 and NX-G8 Dual SP5 platforms take up to 8 GPUs. The NX-G12 SP3 takes up to 12 dual-slot, actively cooled GPUs at PCIe 4.0 x8. We confirm power, airflow and physical fit in your quotation.</p>
+</details>
+<details>
+<summary>Is the RTX 4090 48GB a good choice for Vast.ai or other GPU rental platforms?</summary>
+<p>Platforms decide which hardware they accept and renters choose what they rent, so demand is not guaranteed. If you plan a rental deployment, read our <a href="/vast-ai-hosting/">Vast.ai hosting guide</a> and discuss the GPU choice with us before ordering.</p>
+</details>
+<details>
+<summary>Do you deliver outside Bulgaria?</summary>
+<p>Delivery terms, costs and lead times are agreed in your quotation. See our <a href="/shipping-policy/">Shipping &amp; Handling Policy</a>.</p>
+</details>
+</section>
+<section id="sources" class="nodex-sources"><h2>Sources</h2><p>Specifications and platform details on this page come from the published sources below. Prices come from our configurator on the date shown at the top of the page.</p><ul><li><a href="https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4090/">NVIDIA: GeForce RTX 4090</a></li></ul></section></article>
+<section class="nodex-content nodex-related-guides" aria-label="Guides"><h2>Guides</h2><div class="nodex-grid"><div class="nodex-card"><h3><a href="/rtx-pro-6000-vs-rtx-5090/">RTX PRO 6000 vs RTX 5090: which GPU for AI work?</a></h3><p>Specifications, price per GB, cost at equal memory, power and which models each GPU runs, with indicative EU prices.</p></div><div class="nodex-card"><h3><a href="/local-llm-server/">Local LLM server: how much GPU memory do you need?</a></h3><p>The arithmetic for model weights and context, a sizing table from 8B to 670B parameters and the hardware for each tier.</p></div><div class="nodex-card"><h3><a href="/rtx-pro-6000/">RTX PRO 6000 Blackwell: price, editions and specifications</a></h3><p>Server, Workstation and Max-Q editions compared, full specifications, EU prices from $11,900 and how it compares with the RTX 5090.</p></div></div></section></main>

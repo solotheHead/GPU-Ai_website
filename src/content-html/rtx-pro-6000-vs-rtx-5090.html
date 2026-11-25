@@ -1,0 +1,196 @@
+<main id="main-content" class="nodex-main">
+<article class="nodex-content nodex-guide" lang="en"><nav class="nodex-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="nodex-breadcrumbs-sep" aria-hidden="true">/</span><a href="/guides/">Guides</a><span class="nodex-breadcrumbs-sep" aria-hidden="true">/</span><span aria-current="page">RTX PRO 6000 vs RTX 5090</span></nav>
+<header class="nodex-hero">
+<p class="nodex-eyebrow">GPU GUIDE · UPDATED 11 NOVEMBER 2026</p>
+<h1>RTX PRO 6000 vs RTX 5090: which GPU for AI work?</h1>
+<p>Both are NVIDIA Blackwell GPUs with GDDR7 on a 512-bit interface and fifth-generation Tensor Cores. For AI the deciding difference is memory: 96GB on the RTX PRO 6000 against 32GB on the RTX 5090. This guide compares the two on specifications, cost per GB of GPU memory, power and the models each can run, so you can choose for your workload rather than by the price of a single card.</p>
+<div class="nodex-actions"><a class="nodex-button" href="/request-a-quote/">Discuss your workload</a><a href="#specifications">Jump to the comparison</a></div>
+</header><nav class="nodex-toc" aria-label="On this page"><p class="nodex-toc-title">On this page</p><ol><li><a href="#short-answer">The short answer</a></li><li><a href="#specifications">RTX PRO 6000 vs RTX 5090: specifications side by side</a></li><li><a href="#same-memory">The same amount of memory, compared</a></li><li><a href="#models">Which models fit</a></li><li><a href="#when">Which one fits your project?</a></li><li><a href="#nodex">Both GPUs in NodeX servers</a></li><li><a href="#faq">Frequently asked questions</a></li><li><a href="#sources">Sources</a></li></ol></nav>
+<section id="short-answer">
+<h2>The short answer</h2>
+<ul>
+<li><strong>Choose the RTX 5090</strong> when your models fit in 32GB per GPU — for example 8B to 14B language models or image generation — and you want the lowest price per card.</li>
+<li><strong>Choose the RTX PRO 6000</strong> when memory is the limit: 70B models in 8-bit, long contexts, several users, fine-tuning, or when you need ECC memory and Multi-Instance GPU. At our indicative prices it is also cheaper per GB of GPU memory.</li>
+</ul>
+</section>
+<section id="specifications">
+<h2>RTX PRO 6000 vs RTX 5090: specifications side by side</h2>
+<p>Figures from NVIDIA&#8217;s published specifications. The RTX PRO 6000 comes in three editions; where they differ, the edition is named.</p>
+<div class="nodex-table-scroll">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>RTX PRO 6000 Blackwell</th>
+<th>RTX 5090</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Architecture</td>
+<td>Blackwell</td>
+<td>Blackwell</td>
+</tr>
+<tr>
+<td>GPU memory</td>
+<td>96GB GDDR7 with ECC</td>
+<td>32GB GDDR7 (ECC not listed by NVIDIA)</td>
+</tr>
+<tr>
+<td>Memory interface</td>
+<td>512-bit</td>
+<td>512-bit</td>
+</tr>
+<tr>
+<td>Memory bandwidth</td>
+<td>1,792 GB/s (Workstation and Max-Q), 1,597 GB/s (Server Edition)</td>
+<td>1,792 GB/s</td>
+</tr>
+<tr>
+<td>CUDA cores</td>
+<td>24,064</td>
+<td>21,760</td>
+</tr>
+<tr>
+<td>Tensor Cores</td>
+<td>5th generation</td>
+<td>5th generation</td>
+</tr>
+<tr>
+<td>AI TOPS (NVIDIA figure)</td>
+<td>4,000 (Workstation Edition, FP4 with sparsity)</td>
+<td>3,352</td>
+</tr>
+<tr>
+<td>RT Core performance</td>
+<td>380 TFLOPS (Workstation Edition)</td>
+<td>318 TFLOPS</td>
+</tr>
+<tr>
+<td>Video engines</td>
+<td>4 encoders, 4 decoders</td>
+<td>3 encoders, 2 decoders</td>
+</tr>
+<tr>
+<td>Multi-Instance GPU</td>
+<td>Up to 4 isolated instances</td>
+<td>Not listed by NVIDIA</td>
+</tr>
+<tr>
+<td>NVLink</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Maximum power</td>
+<td>600W (Workstation), 300W (Max-Q), up to 600W (Server Edition)</td>
+<td>575W total graphics power</td>
+</tr>
+<tr>
+<td>Server version at NodeX</td>
+<td>Server Edition, passive: $11,900</td>
+<td>Custom 32GB, dual-slot, passive: $4,690</td>
+</tr>
+<tr>
+<td>Price per GB of GPU memory</td>
+<td>About $124</td>
+<td>About $147</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Prices are NodeX indicative prices in US dollars as shown in our configurator on 11 November 2026. VAT, delivery and availability are confirmed in your written quotation.</p>
+</section>
+<section id="same-memory">
+<h2>The same amount of memory, compared</h2>
+<p>A single RTX 5090 is much cheaper than a single RTX PRO 6000. Compare them at the same total GPU memory and the picture changes:</p>
+<div class="nodex-table-scroll">
+<table>
+<thead>
+<tr>
+<th>Total GPU memory</th>
+<th>With RTX PRO 6000 Server Edition</th>
+<th>With RTX 5090</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>96GB</td>
+<td>1 card, $11,900, up to 600W</td>
+<td>3 cards, $14,070, up to 1,725W</td>
+</tr>
+<tr>
+<td>192GB</td>
+<td>2 cards, $23,800, up to 1,200W</td>
+<td>6 cards, $28,140, up to 3,450W</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Power figures are NVIDIA&#8217;s maximum per card multiplied by the number of cards, for the GPUs only. In an eight-GPU server the difference is the total memory: eight RTX PRO 6000 Server Edition cards give 768GB for $95,200, while eight RTX 5090s give 256GB for $37,520.</p>
+</section>
+<section id="models">
+<h2>Which models fit</h2>
+<div class="nodex-grid">
+<div class="nodex-card">
+<h3>32GB — one RTX 5090</h3>
+<p>8B to 14B models in 8-bit or 16-bit; 32B-class models in 4-bit with a short context.</p>
+</div>
+<div class="nodex-card">
+<h3>96GB — one RTX PRO 6000</h3>
+<p>70B models in 8-bit with room for context; 32B models in 16-bit; mixture-of-experts models of about 120B in 4-bit.</p>
+</div>
+</div>
+<p>A model that does not fit on one card must be split across several. Neither GPU has NVLink, so split models exchange data over PCIe, which adds latency. One 96GB card avoids splitting where three 32GB cards would need it. For the sizing arithmetic, see <a href="/local-llm-server/">how much GPU memory a local LLM server needs</a>.</p>
+</section>
+<section id="when">
+<h2>Which one fits your project?</h2>
+<div class="nodex-grid">
+<div class="nodex-card">
+<h3>Image generation and small models</h3>
+<p>RTX 5090. When the work fits in 32GB, you get Blackwell performance at a much lower price per card.</p>
+</div>
+<div class="nodex-card">
+<h3>Many independent jobs</h3>
+<p>RTX 5090, one job per GPU. Eight cards in one server give eight separate GPUs for parallel work.</p>
+</div>
+<div class="nodex-card">
+<h3>Private LLMs for a team</h3>
+<p>RTX PRO 6000. 70B models in 8-bit fit on one card, with room for several users&#8217; context.</p>
+</div>
+<div class="nodex-card">
+<h3>Fine-tuning</h3>
+<p>RTX PRO 6000. 96GB per GPU reduces the need to split training across cards.</p>
+</div>
+<div class="nodex-card">
+<h3>Shared GPUs</h3>
+<p>RTX PRO 6000. Multi-Instance GPU divides one card into up to four isolated instances.</p>
+</div>
+<div class="nodex-card">
+<h3>Something in between</h3>
+<p>Our modified <a href="/rtx-4090-48gb/">RTX 4090 48GB</a> ($4,000 indicative) gives 48GB per card.</p>
+</div>
+</div>
+</section>
+<section id="nodex">
+<h2>Both GPUs in NodeX servers</h2><figure class="nodex-guide-photo"><a href="/product/nx-g8-dual-sp5/"><img src="/wp-content/plugins/ai-server-quote-system/assets/nodex-nx-g8-dual-sp5-800.webp" width="800" height="333" alt="NodeX NX-G8 Dual SP5 8-GPU server for RTX PRO 6000 or RTX 5090 cards" loading="lazy" decoding="async"></a><figcaption><a href="/product/nx-g8-dual-sp5/">NX-G8 Dual SP5: up to 8 GPUs with dual AMD EPYC SP5 processors and DDR5 ECC memory.</a></figcaption></figure>
+<p>We build 4U GPU servers in Bulgaria with either GPU, from one card to eight. The RTX 5090 we offer is a custom dual-slot configuration with passive cooling for servers with forced airflow; the RTX PRO 6000 is the Server Edition. Your written quotation confirms compatibility, power and cooling, delivery and warranty. For the editions, prices and full specifications of the RTX PRO 6000, see our <a href="/rtx-pro-6000/">RTX PRO 6000 Blackwell guide</a>.</p>
+<div class="nodex-actions"><a class="nodex-button" href="/our-products/">Configure a GPU server</a><a href="/request-a-quote/">Request a quote</a></div>
+</section>
+<section id="faq">
+<h2>Frequently asked questions</h2>
+<details>
+<summary>Is the RTX 5090 suitable for a server?</summary>
+<p>The RTX 5090 we offer is a custom 32GB dual-slot configuration with passive cooling, intended for a compatible server chassis with suitable forced airflow. The warranty is confirmed in your written quotation.</p>
+</details>
+<details>
+<summary>Can I mix RTX 5090 and RTX PRO 6000 cards in one server?</summary>
+<p>Technically yes, but a model split across different GPUs is limited by the slowest card and the smallest memory. Identical GPUs are easier to run and to expand. We confirm the configuration in your quotation.</p>
+</details>
+<details>
+<summary>Is the RTX PRO 6000 faster than the RTX 5090?</summary>
+<p>On NVIDIA&#8217;s figures the RTX PRO 6000 has more CUDA cores and a higher AI TOPS figure, and both have 1,792 GB/s of memory bandwidth in the Workstation Edition and RTX 5090. The bigger practical difference for AI is that three times the memory lets larger models run on one card.</p>
+</details>
+</section>
+<section id="sources" class="nodex-sources"><h2>Sources</h2><p>Specifications and platform details on this page come from the published sources below. Prices come from our configurator on the date shown at the top of the page.</p><ul><li><a href="https://www.nvidia.com/en-us/data-center/rtx-pro-6000-blackwell-server-edition/">NVIDIA: RTX PRO 6000 Blackwell Server Edition</a></li><li><a href="https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/">NVIDIA: GeForce RTX 5090</a></li></ul></section></article>
+<section class="nodex-content nodex-related-guides" aria-label="Guides"><h2>Guides</h2><div class="nodex-grid"><div class="nodex-card"><h3><a href="/rtx-pro-6000/">RTX PRO 6000 Blackwell: price, editions and specifications</a></h3><p>Server, Workstation and Max-Q editions compared, full specifications, EU prices from $11,900 and how it compares with the RTX 5090.</p></div><div class="nodex-card"><h3><a href="/local-llm-server/">Local LLM server: how much GPU memory do you need?</a></h3><p>The arithmetic for model weights and context, a sizing table from 8B to 670B parameters and the hardware for each tier.</p></div><div class="nodex-card"><h3><a href="/rtx-4090-48gb/">RTX 4090 48GB for AI: specifications, price and buying in the EU</a></h3><p>Specifications, what fits in 48GB of VRAM, prices compared with the RTX 3090 48GB, RTX 5090 and RTX PRO 6000, and what to check before buying.</p></div></div></section></main>

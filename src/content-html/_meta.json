@@ -1,0 +1,411 @@
+[
+  {
+    "route": "/",
+    "slug": "home",
+    "title": "GPU Servers & Turnkey AI Business | NodeX Servers",
+    "description": "Build GPU servers for AI or launch a GPU rental business with NodeX. Hardware, deployment, colocation and technical support, quoted for your project.",
+    "bodyClass": "home wp-singular page-template-default page page-id-22 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_smooth_scroll et_full_width_page et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/22/et-core-unified-tb-119-tb-607-deferred-22.min.css"
+    ],
+    "htmlFile": "home.html",
+    "stylesFile": "home.styles.css",
+    "hasScene": true,
+    "mirror": "index.html"
+  },
+  {
+    "route": "/our-products/",
+    "slug": "our-products",
+    "title": "AI & GPU Servers: 3 Platforms, Up to 12 GPUs | NodeX",
+    "description": "AI servers and GPU servers from NodeX: three 4U platforms with AMD EPYC and up to 8 or 12 GPUs, plus modified 48GB RTX cards. Request a quote.",
+    "bodyClass": "wp-singular page-template-default page page-id-24 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter osx et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/24/et-core-unified-tb-119-tb-607-deferred-24.min.css"
+    ],
+    "htmlFile": "our-products.html",
+    "stylesFile": "our-products.styles.css",
+    "hasScene": false,
+    "mirror": "our-products/index.html"
+  },
+  {
+    "route": "/product/nx-g12-sp3/",
+    "slug": "product__nx-g12-sp3",
+    "title": "NX-G12 SP3 GPU Server, up to 12 GPUs | EPYC SP3 | NodeX",
+    "description": "Configure the NodeX NX-G12 SP3 GPU server with AMD EPYC SP3, DDR4 ECC memory and GPU options for AI workloads. Request a compatibility-checked quote.",
+    "bodyClass": "wp-singular product-template-default single single-product postid-361 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nx-design nodex-lang-en woocommerce woocommerce-page woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css",
+      "/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css",
+      "/wp-content/et-cache/361/et-divi-dynamic-tb-119-tb-607-361.css",
+      "/wp-content/et-cache/361/et-core-unified-cpt-tb-119-tb-607-361.min.css",
+      "/wp-content/plugins/woocommerce-composite-products/assets/css/frontend/single-product.css"
+    ],
+    "htmlFile": "product__nx-g12-sp3.html",
+    "stylesFile": "product__nx-g12-sp3.styles.css",
+    "hasScene": false,
+    "mirror": "product/nx-g12-sp3/index.html"
+  },
+  {
+    "route": "/product/nx-g8-dual-sp3/",
+    "slug": "product__nx-g8-dual-sp3",
+    "title": "NX-G8 Dual SP3 8-GPU Server | Dual EPYC SP3 | NodeX",
+    "description": "Configure a dual AMD EPYC SP3 GPU server with DDR4 ECC memory and up to 8 compatible GPUs. Request a NodeX NX-G8 Dual SP3 quotation.",
+    "bodyClass": "wp-singular product-template-default single single-product postid-444 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nx-design nodex-lang-en woocommerce woocommerce-page woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_smooth_scroll et_no_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css",
+      "/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css",
+      "/wp-content/et-cache/444/et-divi-dynamic-tb-119-tb-607-444.css",
+      "/wp-content/et-cache/444/et-core-unified-cpt-tb-119-tb-607-444.min.css",
+      "/wp-content/plugins/woocommerce-composite-products/assets/css/frontend/single-product.css"
+    ],
+    "htmlFile": "product__nx-g8-dual-sp3.html",
+    "stylesFile": "product__nx-g8-dual-sp3.styles.css",
+    "hasScene": false,
+    "mirror": "product/nx-g8-dual-sp3/index.html"
+  },
+  {
+    "route": "/product/nx-g8-dual-sp5/",
+    "slug": "product__nx-g8-dual-sp5",
+    "title": "NX-G8 Dual SP5 8-GPU Server | Dual EPYC SP5 | NodeX",
+    "description": "Configure the NodeX NX-G8 Dual SP5 with dual AMD EPYC SP5 processors, DDR5 ECC memory and up to 8 compatible GPUs. Request a tailored quote.",
+    "bodyClass": "wp-singular product-template-default single single-product postid-486 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nx-design nodex-lang-en woocommerce woocommerce-page woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css",
+      "/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css",
+      "/wp-content/et-cache/486/et-divi-dynamic-tb-119-tb-607-486.css",
+      "/wp-content/et-cache/486/et-core-unified-cpt-tb-119-tb-607-486.min.css",
+      "/wp-content/plugins/woocommerce-composite-products/assets/css/frontend/single-product.css"
+    ],
+    "htmlFile": "product__nx-g8-dual-sp5.html",
+    "stylesFile": "product__nx-g8-dual-sp5.styles.css",
+    "hasScene": false,
+    "mirror": "product/nx-g8-dual-sp5/index.html"
+  },
+  {
+    "route": "/product/custom-graphics-cards/",
+    "slug": "product__custom-graphics-cards",
+    "title": "Custom RTX 3090 & RTX 4090 48GB GPUs | NodeX",
+    "description": "Request custom RTX 3090 48GB or RTX 4090 48GB graphics cards with dual-slot blower cooling. Hardware, compatibility and warranty confirmed by quotation.",
+    "bodyClass": "wp-singular product-template-default single single-product postid-652 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nx-design nodex-lang-en woocommerce woocommerce-page woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter osx et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css",
+      "/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css",
+      "/wp-content/et-cache/652/et-divi-dynamic-tb-119-tb-607-652.css",
+      "/wp-content/et-cache/652/et-core-unified-cpt-tb-119-tb-607-652.min.css"
+    ],
+    "htmlFile": "product__custom-graphics-cards.html",
+    "stylesFile": "product__custom-graphics-cards.styles.css",
+    "hasScene": false,
+    "mirror": "product/custom-graphics-cards/index.html"
+  },
+  {
+    "route": "/gpu-rental-business/",
+    "slug": "gpu-rental-business",
+    "title": "GPU Rental Business Setup & Vast.ai Deployment | NodeX",
+    "description": "Build a GPU rental business with NodeX: server design, assembly, colocation, Vast.ai setup, monitoring and support. Request a tailored deployment proposal.",
+    "bodyClass": "wp-singular page-template-default page page-id-706 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/706/et-core-unified-tb-119-tb-607-deferred-706.min.css"
+    ],
+    "htmlFile": "gpu-rental-business.html",
+    "stylesFile": "gpu-rental-business.styles.css",
+    "hasScene": false,
+    "mirror": "gpu-rental-business/index.html"
+  },
+  {
+    "route": "/vast-ai-hosting/",
+    "slug": "vast-ai-hosting",
+    "title": "Vast.ai Hosting Guide: Hardware, Setup & Costs | NodeX",
+    "description": "How Vast.ai hosting works: pricing, verification, host responsibilities, the hardware that rents well and how to plan costs before buying GPU servers.",
+    "bodyClass": "wp-singular page-template-default page page-id-741 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter osx et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/741/et-core-unified-tb-119-tb-607-deferred-741.min.css"
+    ],
+    "htmlFile": "vast-ai-hosting.html",
+    "stylesFile": "vast-ai-hosting.styles.css",
+    "hasScene": false,
+    "mirror": "vast-ai-hosting/index.html"
+  },
+  {
+    "route": "/request-a-quote/",
+    "slug": "request-a-quote",
+    "title": "Request a Quote | NodeX Servers",
+    "description": "",
+    "bodyClass": "wp-singular page-template-default page page-id-558 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/558/et-core-unified-tb-119-tb-607-deferred-558.min.css"
+    ],
+    "htmlFile": "request-a-quote.html",
+    "stylesFile": "request-a-quote.styles.css",
+    "hasScene": false,
+    "mirror": "request-a-quote/index.html"
+  },
+  {
+    "route": "/contact-us/",
+    "slug": "contact-us",
+    "title": "Contact NodeX Servers | Quotes & Project Enquiries",
+    "description": "Contact NodeX for GPU server quotations, custom graphics cards, colocation and deployment enquiries. Email business@nodexservers.com or call +359 892 933 423.",
+    "bodyClass": "wp-singular page-template-default page page-id-32 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter linux et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/32/et-core-unified-tb-119-tb-607-deferred-32.min.css"
+    ],
+    "htmlFile": "contact-us.html",
+    "stylesFile": "contact-us.styles.css",
+    "hasScene": false,
+    "mirror": "contact-us/index.html"
+  },
+  {
+    "route": "/guides/",
+    "slug": "guides",
+    "title": "GPU Guides: RTX PRO 6000, H200 NVL & AI Servers | NodeX",
+    "description": "GPU guides from NodeX: RTX PRO 6000, RTX 5090, H200 NVL and RTX 4090 48GB compared, local LLM sizing, 8-GPU builds and Vast.ai hosting.",
+    "bodyClass": "wp-singular page-template-default page page-id-754 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/754/et-core-unified-tb-119-tb-607-deferred-754.min.css"
+    ],
+    "htmlFile": "guides.html",
+    "stylesFile": "guides.styles.css",
+    "hasScene": false,
+    "mirror": "guides/index.html"
+  },
+  {
+    "route": "/rtx-4090-48gb/",
+    "slug": "rtx-4090-48gb",
+    "title": "RTX 4090 48GB: Specs, Price & Where to Buy in the EU | NodeX",
+    "description": "RTX 4090 48GB: modified RTX 4090 with blower cooling. Specifications, what fits in 48GB of VRAM and price vs RTX 3090 48GB, RTX 5090 and RTX PRO 6000.",
+    "bodyClass": "wp-singular page-template-default page page-id-739 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/739/et-core-unified-tb-119-tb-607-deferred-739.min.css"
+    ],
+    "htmlFile": "rtx-4090-48gb.html",
+    "stylesFile": "rtx-4090-48gb.styles.css",
+    "hasScene": false,
+    "mirror": "rtx-4090-48gb/index.html"
+  },
+  {
+    "route": "/rtx-pro-6000/",
+    "slug": "rtx-pro-6000",
+    "title": "RTX PRO 6000 Blackwell: Price, Editions & Specs (96GB) | NodeX",
+    "description": "RTX PRO 6000 Blackwell 96GB: Server, Workstation and Max-Q editions compared, full specifications, EU prices from $11,900 and how it compares with the RTX 5090.",
+    "bodyClass": "wp-singular page-template-default page page-id-747 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter osx et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/747/et-core-unified-tb-119-tb-607-deferred-747.min.css"
+    ],
+    "htmlFile": "rtx-pro-6000.html",
+    "stylesFile": "rtx-pro-6000.styles.css",
+    "hasScene": false,
+    "mirror": "rtx-pro-6000/index.html"
+  },
+  {
+    "route": "/rtx-pro-6000-vs-h200/",
+    "slug": "rtx-pro-6000-vs-h200",
+    "title": "RTX PRO 6000 vs H200 NVL: Specs, Price & Which to Buy | NodeX",
+    "description": "RTX PRO 6000 vs H200 NVL: memory, bandwidth, FP4/FP8, power, NVLink and 8-GPU costs compared, and which GPU to choose for inference or training.",
+    "bodyClass": "wp-singular page-template-default page page-id-740 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/740/et-core-unified-tb-119-tb-607-deferred-740.min.css"
+    ],
+    "htmlFile": "rtx-pro-6000-vs-h200.html",
+    "stylesFile": "rtx-pro-6000-vs-h200.styles.css",
+    "hasScene": false,
+    "mirror": "rtx-pro-6000-vs-h200/index.html"
+  },
+  {
+    "route": "/rtx-pro-6000-vs-rtx-5090/",
+    "slug": "rtx-pro-6000-vs-rtx-5090",
+    "title": "RTX PRO 6000 vs RTX 5090: Which GPU for AI? | NodeX",
+    "description": "RTX PRO 6000 vs RTX 5090 (96GB vs 32GB): specifications, price per GB, cost at equal memory, power and which AI models each runs, with EU prices.",
+    "bodyClass": "wp-singular page-template-default page page-id-749 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter osx et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/749/et-core-unified-tb-119-tb-607-deferred-749.min.css"
+    ],
+    "htmlFile": "rtx-pro-6000-vs-rtx-5090.html",
+    "stylesFile": "rtx-pro-6000-vs-rtx-5090.styles.css",
+    "hasScene": false,
+    "mirror": "rtx-pro-6000-vs-rtx-5090/index.html"
+  },
+  {
+    "route": "/h200-nvl/",
+    "slug": "h200-nvl",
+    "title": "NVIDIA H200 NVL: Price, Specs & GPU Servers | NodeX",
+    "description": "NVIDIA H200 NVL with 141GB HBM3e: full specifications, NVL vs SXM, EU prices for 1 to 8 GPUs from $29,490 and what an H200 NVL server needs.",
+    "bodyClass": "wp-singular page-template-default page page-id-750 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/750/et-core-unified-tb-119-tb-607-deferred-750.min.css"
+    ],
+    "htmlFile": "h200-nvl.html",
+    "stylesFile": "h200-nvl.styles.css",
+    "hasScene": false,
+    "mirror": "h200-nvl/index.html"
+  },
+  {
+    "route": "/8x-rtx-pro-6000-server/",
+    "slug": "8x-rtx-pro-6000-server",
+    "title": "8\u00d7 RTX PRO 6000 Server: Configuration & Price | NodeX",
+    "description": "8\u00d7 RTX PRO 6000 server: two reference builds with 768GB of GPU memory on dual AMD EPYC 9004, full parts list, prices from $121,384, power and cooling.",
+    "bodyClass": "wp-singular page-template-default page page-id-742 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/742/et-core-unified-tb-119-tb-607-deferred-742.min.css"
+    ],
+    "htmlFile": "8x-rtx-pro-6000-server.html",
+    "stylesFile": "8x-rtx-pro-6000-server.styles.css",
+    "hasScene": false,
+    "mirror": "8x-rtx-pro-6000-server/index.html"
+  },
+  {
+    "route": "/local-llm-server/",
+    "slug": "local-llm-server",
+    "title": "Local LLM Server: How Much GPU Memory Do You Need? | NodeX",
+    "description": "Local LLM server sizing: GPU memory for weights by precision, KV cache for context and users, a table from 8B to 670B models and hardware per tier.",
+    "bodyClass": "wp-singular page-template-default page page-id-744 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter linux et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/744/et-core-unified-tb-119-tb-607-deferred-744.min.css"
+    ],
+    "htmlFile": "local-llm-server.html",
+    "stylesFile": "local-llm-server.styles.css",
+    "hasScene": false,
+    "mirror": "local-llm-server/index.html"
+  },
+  {
+    "route": "/buy-or-rent-gpu-server/",
+    "slug": "buy-or-rent-gpu-server",
+    "title": "Buy or Rent a GPU Server? The Break-Even Point | NodeX",
+    "description": "Buy or rent a GPU server for AI? Break-even hours for RTX PRO 6000, H200 NVL and RTX 5090 versus Vast.ai rental prices, and what the numbers leave out.",
+    "bodyClass": "wp-singular page-template-default page page-id-773 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter osx et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/773/et-core-unified-tb-119-tb-607-deferred-773.min.css"
+    ],
+    "htmlFile": "buy-or-rent-gpu-server.html",
+    "stylesFile": "buy-or-rent-gpu-server.styles.css",
+    "hasScene": false,
+    "mirror": "buy-or-rent-gpu-server/index.html"
+  },
+  {
+    "route": "/about-us/",
+    "slug": "about-us",
+    "title": "About NodeX Servers | GPU Hardware & Deployment",
+    "description": "Meet NodeX Servers, a Bulgarian supplier of GPU servers and custom hardware, with planning, build, deployment and support services for AI compute projects.",
+    "bodyClass": "wp-singular page-template-default page page-id-26 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter osx et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/26/et-core-unified-tb-119-tb-607-deferred-26.min.css"
+    ],
+    "htmlFile": "about-us.html",
+    "stylesFile": "about-us.styles.css",
+    "hasScene": false,
+    "mirror": "about-us/index.html"
+  },
+  {
+    "route": "/faq/",
+    "slug": "faq",
+    "title": "GPU Servers & Rental Deployment FAQ | NodeX Servers",
+    "description": "Answers about NodeX GPU server quotes, hardware selection, deployment, Vast.ai setup, shipping, warranties and returns. Plan your next system.",
+    "bodyClass": "wp-singular page-template-default page page-id-28 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter osx et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/28/et-core-unified-tb-119-tb-607-deferred-28.min.css"
+    ],
+    "htmlFile": "faq.html",
+    "stylesFile": "faq.styles.css",
+    "hasScene": false,
+    "mirror": "faq/index.html"
+  },
+  {
+    "route": "/support/",
+    "slug": "support",
+    "title": "GPU Server Technical Support | NodeX Servers",
+    "description": "Contact NodeX for GPU server faults, warranty claims and agreed deployment support. See what details to include and how to protect your data.",
+    "bodyClass": "wp-singular page-template-default page page-id-30 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/30/et-core-unified-tb-119-tb-607-deferred-30.min.css"
+    ],
+    "htmlFile": "support.html",
+    "stylesFile": "support.styles.css",
+    "hasScene": false,
+    "mirror": "support/index.html"
+  },
+  {
+    "route": "/terms-of-use/",
+    "slug": "terms-of-use",
+    "title": "Terms of Use | NodeX Servers",
+    "description": "Terms for quotations, orders, prices, payment, delivery, modified hardware and warranty when you buy GPU servers and hardware from NodeX Servers.",
+    "bodyClass": "wp-singular page-template-default page page-id-625 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nx-design nodex-lang-en nodex-content-page woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter osx et_pb_gutters3 et_pb_pagebuilder_layout et_smooth_scroll et_no_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/625/et-core-unified-625.min.css",
+      "/wp-content/et-cache/625/et-core-unified-tb-119-tb-607-deferred-625.min.css"
+    ],
+    "htmlFile": "terms-of-use.html",
+    "stylesFile": "terms-of-use.styles.css",
+    "hasScene": false,
+    "mirror": "terms-of-use/index.html"
+  },
+  {
+    "route": "/privacy-policy/",
+    "slug": "privacy-policy",
+    "title": "Privacy & Cookie Policy | NodeX Servers",
+    "description": "How NodeX Servers (\u0415\u043d \u0414\u0438 \u0417\u0435\u0442 \u0415\u041e\u041e\u0414) handles personal data and cookies: what we collect and why, who receives it, how long we keep it and your rights.",
+    "bodyClass": "privacy-policy wp-singular page-template-default page page-id-3 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nx-design nodex-lang-en nodex-content-page woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_smooth_scroll et_full_width_page et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/themes/Divi/style-static.min.css",
+      "/wp-content/et-cache/3/et-core-unified-tb-119-tb-607-3.min.css",
+      "/wp-content/et-cache/3/et-core-unified-tb-119-tb-607-deferred-3.min.css"
+    ],
+    "htmlFile": "privacy-policy.html",
+    "stylesFile": "privacy-policy.styles.css",
+    "hasScene": false,
+    "mirror": "privacy-policy/index.html"
+  },
+  {
+    "route": "/refund-policy/",
+    "slug": "refund-policy",
+    "title": "Sales & Refund Policy | NodeX Servers",
+    "description": "Order acceptance, consumer withdrawal, returns, refund timing, business cancellations and non-conforming goods for NodeX GPU servers and hardware.",
+    "bodyClass": "wp-singular page-template-default page page-id-360 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nx-design nodex-lang-en nodex-content-page woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter osx et_pb_gutters3 et_smooth_scroll et_full_width_page et_divi_theme et-db",
+    "pageCss": [],
+    "htmlFile": "refund-policy.html",
+    "stylesFile": "refund-policy.styles.css",
+    "hasScene": false,
+    "mirror": "refund-policy/index.html"
+  },
+  {
+    "route": "/warranty-policy/",
+    "slug": "warranty-policy",
+    "title": "Warranty Policy | NodeX Servers",
+    "description": "Legal conformity rights, the NodeX commercial warranty for GPU servers and components, exclusions for modified hardware and how to make a claim.",
+    "bodyClass": "wp-singular page-template-default page page-id-682 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nx-design nodex-lang-en nodex-content-page woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter et_pb_gutters3 et_smooth_scroll et_full_width_page et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/682/et-core-unified-tb-119-tb-607-deferred-682.min.css"
+    ],
+    "htmlFile": "warranty-policy.html",
+    "stylesFile": "warranty-policy.styles.css",
+    "hasScene": false,
+    "mirror": "warranty-policy/index.html"
+  },
+  {
+    "route": "/shipping-policy/",
+    "slug": "shipping-policy",
+    "title": "Shipping & Handling Policy | NodeX Servers",
+    "description": "Assembly and delivery periods, charges and taxes, transport risk, delays and inspection for transport damage on NodeX GPU server and hardware orders.",
+    "bodyClass": "wp-singular page-template-default page page-id-684 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nx-design nodex-lang-en nodex-content-page woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_smooth_scroll et_full_width_page et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/et-cache/684/et-core-unified-tb-119-tb-607-deferred-684.min.css"
+    ],
+    "htmlFile": "shipping-policy.html",
+    "stylesFile": "shipping-policy.styles.css",
+    "hasScene": false,
+    "mirror": "shipping-policy/index.html"
+  },
+  {
+    "route": "/my-account/withdraw-order/",
+    "slug": "my-account__withdraw-order",
+    "title": "My account | NodeX Servers",
+    "description": "",
+    "bodyClass": "wp-singular page-template-default page page-id-359 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nx-design nodex-lang-en woocommerce-account woocommerce-page woocommerce-order-withdrawal woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db",
+    "pageCss": [
+      "/wp-content/plugins/woocommerce/assets/css/select2.css",
+      "/wp-content/plugins/ai-server-quote-system/nodex-withdrawal-design.css"
+    ],
+    "htmlFile": "my-account__withdraw-order.html",
+    "stylesFile": "my-account__withdraw-order.styles.css",
+    "hasScene": false,
+    "mirror": "my-account/withdraw-order/index.html"
+  }
+]
