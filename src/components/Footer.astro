@@ -1,0 +1,73 @@
+---
+import { site } from '../config/site';
+---
+<footer class="et-l et-l--footer">
+  <div class="et_builder_inner_content et_pb_gutters3">
+    <div class="et_pb_section et_pb_section_0_tb_footer nx-layout-section et_section_regular">
+      <div class="et_pb_row et_pb_row_0_tb_footer nx-layout-row">
+        <div class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_footer et_pb_css_mix_blend_mode_passthrough et-last-child">
+          <div class="et_pb_module et_pb_code et_pb_code_0_tb_footer nx-layout-code">
+            <div class="et_pb_code_inner">
+              <div class="nx-footer">
+                <div class="nx-container">
+                  <div class="nx-footer-top">
+                    <p>{site.footerHook}</p>
+                    <a class="nx-text-link" href={site.cta.href}>
+                      {site.footerCta} <span aria-hidden="true">↗</span>
+                    </a>
+                  </div>
+                  <div class="nx-footer-grid">
+                    <div class="nx-footer-brand">
+                      <a class="nx-brand" href="/" aria-label={`${site.name} home`}>
+                        <img src={site.logos.footer} width="160" height="52" alt={site.name} loading="lazy" decoding="async" />
+                      </a>
+                      <p>{site.tagline}<br />{site.taglineSub}</p>
+                      <a href={`mailto:${site.email}`}>{site.email}</a>
+                      {site.phones.map((p) => (
+                        <a href={`tel:${p.tel}`}>{p.display}</a>
+                      ))}
+                      <a href={site.linkedIn} target="_blank" rel="noopener">LinkedIn</a>
+                    </div>
+                    <nav aria-label={`Explore ${site.name}`}>
+                      <h2>Explore</h2>
+                      {site.explore.map((item) => (
+                        <a href={item.href}>{item.label}</a>
+                      ))}
+                    </nav>
+                    <nav aria-label="Help and policies">
+                      <h2>Help & policies</h2>
+                      {site.help.map((item) => (
+                        <a href={item.href}>{item.label}</a>
+                      ))}
+                    </nav>
+                    <div class="nx-footer-company">
+                      <h2>Company</h2>
+                      <p>
+                        {site.companyLegal}<br />
+                        UIC: {site.uic}<br />
+                        VAT: {site.vat}
+                      </p>
+                      <p>
+                        {site.address.line1}<br />
+                        {site.address.line2}
+                      </p>
+                      <p>All sales by written quotation.</p>
+                    </div>
+                  </div>
+                  <div class="nx-footer-legal">
+                    <span>© {site.productName} · {site.companyShort}</span>
+                    <nav aria-label="Legal">
+                      {site.legal.map((item) => (
+                        <a href={item.href}>{item.label}</a>
+                      ))}
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
