@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import content from '../../content-html/guides.html?raw';
+---
+<BaseLayout
+  title={"GPU Guides: RTX PRO 6000, H200 NVL & AI Servers | NodeX"}
+  description={"GPU guides from NodeX: RTX PRO 6000, RTX 5090, H200 NVL and RTX 4090 48GB compared, local LLM sizing, 8-GPU builds and Vast.ai hosting."}
+  bodyClass={"wp-singular page-template-default page page-id-754 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db"}
+  pageCss={[
+  "/wp-content/et-cache/754/et-core-unified-tb-119-tb-607-deferred-754.min.css"
+]}
+  stylesSlug="guides"
+>
+  <Fragment set:html={content} />
+</BaseLayout>

@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import content from '../../content-html/warranty-policy.html?raw';
+---
+<BaseLayout
+  title={"Warranty Policy | NodeX Servers"}
+  description={"Legal conformity rights, the NodeX commercial warranty for GPU servers and components, exclusions for modified hardware and how to make a claim."}
+  bodyClass={"wp-singular page-template-default page page-id-682 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nx-design nodex-lang-en nodex-content-page woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter et_pb_gutters3 et_smooth_scroll et_full_width_page et_divi_theme et-db"}
+  pageCss={[
+  "/wp-content/et-cache/682/et-core-unified-tb-119-tb-607-deferred-682.min.css"
+]}
+  stylesSlug="warranty-policy"
+>
+  <Fragment set:html={content} />
+</BaseLayout>

@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import content from '../../content-html/our-products.html?raw';
+---
+<BaseLayout
+  title={"AI & GPU Servers: 3 Platforms, Up to 12 GPUs | NodeX"}
+  description={"AI servers and GPU servers from NodeX: three 4U platforms with AMD EPYC and up to 8 or 12 GPUs, plus modified 48GB RTX cards. Request a quote."}
+  bodyClass={"wp-singular page-template-default page page-id-24 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter osx et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db"}
+  pageCss={[
+  "/wp-content/et-cache/24/et-core-unified-tb-119-tb-607-deferred-24.min.css"
+]}
+  stylesSlug="our-products"
+>
+  <Fragment set:html={content} />
+</BaseLayout>

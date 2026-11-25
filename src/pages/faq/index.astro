@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import content from '../../content-html/faq.html?raw';
+---
+<BaseLayout
+  title={"GPU Servers & Rental Deployment FAQ | NodeX Servers"}
+  description={"Answers about NodeX GPU server quotes, hardware selection, deployment, Vast.ai setup, shipping, warranties and returns. Plan your next system."}
+  bodyClass={"wp-singular page-template-default page page-id-28 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter osx et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db"}
+  pageCss={[
+  "/wp-content/et-cache/28/et-core-unified-tb-119-tb-607-deferred-28.min.css"
+]}
+  stylesSlug="faq"
+>
+  <Fragment set:html={content} />
+</BaseLayout>

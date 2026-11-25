@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import content from '../content-html/home.html?raw';
+---
+<BaseLayout
+  title={"GPU Servers & Turnkey AI Business | NodeX Servers"}
+  description={"Build GPU servers for AI or launch a GPU rental business with NodeX. Hardware, deployment, colocation and technical support, quoted for your project."}
+  bodyClass={"home wp-singular page-template-default page page-id-22 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_smooth_scroll et_full_width_page et_divi_theme et-db"}
+  pageCss={[
+  "/wp-content/et-cache/22/et-core-unified-tb-119-tb-607-deferred-22.min.css"
+]}
+  stylesSlug="home"
+>
+  <Fragment set:html={content} />
+</BaseLayout>

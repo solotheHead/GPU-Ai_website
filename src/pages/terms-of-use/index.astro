@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import content from '../../content-html/terms-of-use.html?raw';
+---
+<BaseLayout
+  title={"Terms of Use | NodeX Servers"}
+  description={"Terms for quotations, orders, prices, payment, delivery, modified hardware and warranty when you buy GPU servers and hardware from NodeX Servers."}
+  bodyClass={"wp-singular page-template-default page page-id-625 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nx-design nodex-lang-en nodex-content-page woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter osx et_pb_gutters3 et_pb_pagebuilder_layout et_smooth_scroll et_no_sidebar et_divi_theme et-db"}
+  pageCss={[
+  "/wp-content/et-cache/625/et-core-unified-625.min.css",
+  "/wp-content/et-cache/625/et-core-unified-tb-119-tb-607-deferred-625.min.css"
+]}
+  stylesSlug="terms-of-use"
+>
+  <Fragment set:html={content} />
+</BaseLayout>

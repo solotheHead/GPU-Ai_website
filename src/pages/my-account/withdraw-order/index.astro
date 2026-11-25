@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import content from '../../../content-html/my-account__withdraw-order.html?raw';
+---
+<BaseLayout
+  title={"My account | NodeX Servers"}
+  description={""}
+  bodyClass={"wp-singular page-template-default page page-id-359 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nx-design nodex-lang-en woocommerce-account woocommerce-page woocommerce-order-withdrawal woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db"}
+  pageCss={[
+  "/wp-content/plugins/woocommerce/assets/css/select2.css",
+  "/wp-content/plugins/ai-server-quote-system/nodex-withdrawal-design.css"
+]}
+  stylesSlug="my-account__withdraw-order"
+>
+  <Fragment set:html={content} />
+</BaseLayout>

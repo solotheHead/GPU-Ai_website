@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import content from '../../content-html/local-llm-server.html?raw';
+---
+<BaseLayout
+  title={"Local LLM Server: How Much GPU Memory Do You Need? | NodeX"}
+  description={"Local LLM server sizing: GPU memory for weights by precision, KV cache for context and users, a table from 8B to 670B models and hardware per tier."}
+  bodyClass={"wp-singular page-template-default page page-id-744 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter linux et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db"}
+  pageCss={[
+  "/wp-content/et-cache/744/et-core-unified-tb-119-tb-607-deferred-744.min.css"
+]}
+  stylesSlug="local-llm-server"
+>
+  <Fragment set:html={content} />
+</BaseLayout>

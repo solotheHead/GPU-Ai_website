@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import content from '../../content-html/support.html?raw';
+---
+<BaseLayout
+  title={"GPU Server Technical Support | NodeX Servers"}
+  description={"Contact NodeX for GPU server faults, warranty claims and agreed deployment support. See what details to include and how to protect your data."}
+  bodyClass={"wp-singular page-template-default page page-id-30 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db"}
+  pageCss={[
+  "/wp-content/et-cache/30/et-core-unified-tb-119-tb-607-deferred-30.min.css"
+]}
+  stylesSlug="support"
+>
+  <Fragment set:html={content} />
+</BaseLayout>

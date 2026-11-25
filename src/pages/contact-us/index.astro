@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import content from '../../content-html/contact-us.html?raw';
+---
+<BaseLayout
+  title={"Contact NodeX Servers | Quotes & Project Enquiries"}
+  description={"Contact NodeX for GPU server quotations, custom graphics cards, colocation and deployment enquiries. Email business@nodexservers.com or call +359 892 933 423."}
+  bodyClass={"wp-singular page-template-default page page-id-32 wp-theme-Divi wp-child-theme-Divi-Child-Theme theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer nodex-content-page nx-design nodex-lang-en woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter linux et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db"}
+  pageCss={[
+  "/wp-content/et-cache/32/et-core-unified-tb-119-tb-607-deferred-32.min.css"
+]}
+  stylesSlug="contact-us"
+>
+  <Fragment set:html={content} />
+</BaseLayout>
