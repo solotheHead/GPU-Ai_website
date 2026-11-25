@@ -1,0 +1,262 @@
+/* Public withdrawal flow: presentation only; preserve WooCommerce form states. */
+body.nx-design:has(.woocommerce-order-withdrawal-content) #main-content {
+  background:var(--nx-bg,#090c12)!important;
+  color:var(--nx-text,#f6f7fb);
+  font-family:var(--nx-font,system-ui,sans-serif);
+}
+body.nx-design:has(.woocommerce-order-withdrawal-content) #main-content > .container {
+  width:calc(100% - 64px)!important;
+  max-width:960px!important;
+  padding:64px 0 84px!important;
+}
+body.nx-design:has(.woocommerce-order-withdrawal-content) #main-content > .container::before,
+body.nx-design:has(.woocommerce-order-withdrawal-content) #sidebar {
+  display:none!important;
+}
+body.nx-design:has(.woocommerce-order-withdrawal-content) #left-area {
+  width:100%!important;
+  float:none!important;
+  padding:0!important;
+}
+body.nx-design:has(.woocommerce-order-withdrawal-content) #left-area > article {
+  margin:0;
+  padding:0;
+}
+body.nx-design:has(.woocommerce-order-withdrawal-content) #main-content h1.entry-title {
+  margin:0 0 28px;
+  padding:0;
+  color:var(--nx-text,#f6f7fb)!important;
+  font:600 clamp(34px,4.2vw,48px)/1.12 var(--nx-font,system-ui,sans-serif)!important;
+  letter-spacing:-.035em;
+  overflow-wrap:anywhere;
+}
+body.nx-design .woocommerce-order-withdrawal-content,
+body.nx-design .woocommerce-order-withdrawal-content * {
+  box-sizing:border-box;
+}
+body.nx-design .woocommerce-order-withdrawal-content {
+  color:var(--nx-muted,#b2bece);
+  font:400 16px/1.75 var(--nx-font,system-ui,sans-serif);
+  overflow-wrap:anywhere;
+}
+body.nx-design .woocommerce-order-withdrawal-content > p {
+  max-width:78ch;
+  margin:0 0 20px;
+  padding:0;
+  color:var(--nx-muted,#b2bece);
+}
+body.nx-design .woocommerce-order-withdrawal-content h2,
+body.nx-design .woocommerce-order-withdrawal-content h3,
+body.nx-design .woocommerce-order-withdrawal-content legend {
+  color:var(--nx-text,#f6f7fb);
+  font-family:var(--nx-font,system-ui,sans-serif);
+  font-weight:600;
+  line-height:1.3;
+  letter-spacing:-.02em;
+}
+body.nx-design .woocommerce-order-withdrawal-content h2 { font-size:26px; }
+body.nx-design .woocommerce-order-withdrawal-content h3 { font-size:22px; }
+body.nx-design .woocommerce-order-withdrawal-content a {
+  color:var(--nx-accent-hover,#ff9c59);
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+body.nx-design .woocommerce-order-withdrawal-content strong {
+  color:var(--nx-text,#f6f7fb);
+}
+body.nx-design .woocommerce-order-withdrawal-content__steps {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:32px 0!important;
+  padding:0!important;
+  list-style:none!important;
+}
+body.nx-design .woocommerce-order-withdrawal-content__steps > li {
+  flex:1 1 180px;
+  margin:0;
+  padding:14px 18px;
+  border:1px solid var(--nx-border,rgba(185,201,224,.16));
+  border-radius:8px;
+  background:var(--nx-surface,#111720);
+  color:var(--nx-muted,#b2bece);
+  font-size:14px;
+  line-height:1.5;
+}
+body.nx-design .woocommerce-order-withdrawal-content__steps > .woocommerce-order-withdrawal-content__step--current {
+  border-color:#b4784c;
+  background:#2a201c;
+  color:#ffb078;
+  font-weight:600;
+}
+body.nx-design .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:22px 20px;
+  margin:0;
+  padding:32px;
+  border:1px solid var(--nx-border,rgba(185,201,224,.16));
+  border-radius:18px;
+  background:var(--nx-surface,#111720);
+}
+body.nx-design .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm > * {
+  grid-column:1 / -1;
+  min-width:0;
+}
+body.nx-design .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm > .form-row-first,
+body.nx-design .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm > .form-row-last {
+  grid-column:auto;
+}
+body.nx-design .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm .form-row {
+  float:none!important;
+  clear:none!important;
+  width:100%!important;
+  margin:0!important;
+  padding:0!important;
+}
+body.nx-design .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm label {
+  color:var(--nx-text,#f6f7fb);
+  font:500 14px/1.5 var(--nx-font,system-ui,sans-serif);
+}
+body.nx-design .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm .form-row > label {
+  display:block;
+  margin-bottom:8px;
+}
+body.nx-design .woocommerce-order-withdrawal-content .required {
+  color:#ffb078;
+  text-decoration:none;
+}
+body.nx-design #main-content .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm input.input-text,
+body.nx-design #main-content .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm textarea.input-text,
+body.nx-design #main-content .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm select {
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  min-height:48px;
+  margin:0;
+  padding:12px 14px;
+  border:1px solid #637084!important;
+  border-radius:7px;
+  background:#090e16!important;
+  color:var(--nx-text,#f6f7fb)!important;
+  box-shadow:none;
+  font:400 16px/1.5 var(--nx-font,system-ui,sans-serif)!important;
+  color-scheme:dark;
+}
+body.nx-design .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm textarea.input-text {
+  min-height:140px!important;
+  resize:vertical;
+}
+body.nx-design .woocommerce-order-withdrawal-content input::placeholder,
+body.nx-design .woocommerce-order-withdrawal-content textarea::placeholder {
+  color:#93a1b5;
+  opacity:1;
+}
+body.nx-design .woocommerce-order-withdrawal-content__radio-field {
+  min-width:0;
+  margin:0;
+  padding:18px 20px;
+  border:1px solid #465365;
+  border-radius:9px;
+}
+body.nx-design .woocommerce-order-withdrawal-content__radio-field legend {
+  padding:0 6px;
+  font-size:15px;
+}
+body.nx-design .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm .woocommerce-order-withdrawal-content__radio-label {
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  min-height:44px;
+  margin:0;
+  padding:10px 0;
+  font-weight:400;
+  cursor:pointer;
+}
+body.nx-design .woocommerce-order-withdrawal-content input[type=radio],
+body.nx-design .woocommerce-order-withdrawal-content input[type=checkbox] {
+  flex:0 0 auto;
+  width:18px;
+  height:18px;
+  margin:2px 0 0;
+  accent-color:var(--nx-accent,#ef7d32);
+}
+body.nx-design .woocommerce-order-withdrawal-content__actions {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:4px;
+}
+body.nx-design #page-container #main-content .woocommerce-order-withdrawal-content .woocommerce-Button.button {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:52px;
+  margin:0;
+  padding:14px 24px!important;
+  border:1px solid var(--nx-accent,#ef7d32)!important;
+  border-radius:8px!important;
+  background:var(--nx-accent,#ef7d32)!important;
+  color:#10141b!important;
+  font:650 14px/1.5 var(--nx-font,system-ui,sans-serif)!important;
+  text-align:center;
+  white-space:normal;
+  cursor:pointer;
+}
+body.nx-design #page-container #main-content .woocommerce-order-withdrawal-content .woocommerce-Button.button:hover {
+  background:var(--nx-accent-hover,#ff9c59)!important;
+  border-color:var(--nx-accent-hover,#ff9c59)!important;
+}
+body.nx-design .woocommerce-order-withdrawal-content .woocommerce-Button.button::after {
+  display:none!important;
+}
+body.nx-design .woocommerce-order-withdrawal-content :focus-visible {
+  outline:2px solid #ffb783!important;
+  outline-offset:3px!important;
+}
+body.nx-design .woocommerce-order-withdrawal-content [aria-invalid=true],
+body.nx-design .woocommerce-order-withdrawal-content .woocommerce-invalid input.input-text {
+  border-color:#ffaba4!important;
+}
+@media(max-width:700px) {
+  body.nx-design:has(.woocommerce-order-withdrawal-content) #main-content > .container {
+    width:calc(100% - 40px)!important;
+    padding:42px 0 64px!important;
+  }
+  body.nx-design .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm {
+    grid-template-columns:minmax(0,1fr);
+    padding:24px;
+    gap:20px;
+  }
+  body.nx-design .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm > .form-row-first,
+  body.nx-design .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm > .form-row-last {
+    grid-column:1;
+  }
+  body.nx-design .woocommerce-order-withdrawal-content__steps {
+    margin:26px 0!important;
+  }
+  body.nx-design .woocommerce-order-withdrawal-content__radio-field {
+    padding:14px 16px;
+  }
+}
+@media(max-width:480px) {
+  body.nx-design:has(.woocommerce-order-withdrawal-content) #main-content > .container {
+    width:calc(100% - 32px)!important;
+  }
+  body.nx-design .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm {
+    padding:22px 18px;
+    border-radius:14px;
+  }
+  body.nx-design .woocommerce-order-withdrawal-content__steps > li {
+    flex-basis:100%;
+  }
+  body.nx-design .woocommerce-order-withdrawal-content__actions > .woocommerce-Button.button {
+    width:100%;
+  }
+}
+
+body.nx-design .woocommerce-order-withdrawal-content form.woocommerce-OrderWithdrawalForm > .clear{display:none}
+body.nx-design .woocommerce-order-withdrawal-content__steps > li::after{content:none!important}
+/* Override the extension's narrow default so steps and form share the page grid. */
+body.nx-design .woocommerce-order-withdrawal-content{width:100%;max-width:none!important}
